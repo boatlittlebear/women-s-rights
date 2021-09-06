@@ -61,3 +61,11 @@ li a {
 .text[data-active="1"] {
 	opacity: 1;
 }
+
+.slider {
+  display: flex;
+  justify-content: space-evenly;
+}
+.mySlides {
+  width: 55%;
+}
