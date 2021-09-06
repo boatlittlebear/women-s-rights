@@ -1,0 +1,37 @@
+:root {
+	--h: 0;
+	--scrollY: 0;
+	--cartoon-1 : url(https://media.discordapp.net/attachments/881913497003372584/881955546603876362/Untitled_Artwork.png?width=753&height=683)
+}
+
+body {
+  font-family: 'Mitr', sans-serif;
+	text-align: center;
+}
+
+#post {
+  font-size:3em;
+  position:fixed;
+  top:0;
+  left:0;
+  background:#fffc;
+}
+
+.cartoon {
+	width: 70%;
+}
+
+.text{
+	font-size: 3vw;
+	margin: 400px 10px 400px;
+	opacity: 0;
+	transition: .8s;
+}
+
+.text[data-active="0"] {
+	opacity: 0;
+}
+
+.text[data-active="1"] {
+	opacity: 1;
+}
