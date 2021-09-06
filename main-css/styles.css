@@ -71,8 +71,14 @@ li a {
 .slider {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5vw;
   opacity: 0;
 	transition: .8s;
+}
+
+.button {
+  height: 5vw;
 }
 
 .mySlides {

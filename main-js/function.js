@@ -28,6 +28,13 @@ document.body.onscroll = function () {
     document.querySelector(".text:nth-of-type(3)").dataset.active = 0;
   }
 
+  let t4 = document.querySelector(".text:nth-of-type(4)").offsetTop;
+  if (scrollY + viewHeight - 250 >= t4) {
+    document.querySelector(".text:nth-of-type(4)").dataset.active = 1;
+  } else {
+    document.querySelector(".text:nth-of-type(4)").dataset.active = 0;
+  }
+
   let a1 = document.querySelector(".cartoon:nth-of-type(3)").offsetTop;
   if (scrollY + viewHeight - 500 >= a1) {
     document.querySelector(".cartoon:nth-of-type(3)").src="img/cartoon/artwork-3.2.png";
