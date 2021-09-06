@@ -11,22 +11,23 @@ body {
 	color: #030450;
 }
 
-/*
 #post {
   font-size:3em;
   position:fixed;
   top:0;
   left:0;
   background:#fffc;
-}*/
+}
 
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  top: 0;
   overflow: hidden;
+  position: sticky;
   background-color: #fff799;
-	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 li {
