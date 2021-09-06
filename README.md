@@ -1,5 +1,5 @@
 # MULTIMEDIA PROGRAMING PROJECT
-## women-s-rights
+## Empowering women
 
 <p align="center">
   <img src="https://d3i6fh83elv35t.cloudfront.net/newshour/app/uploads/2014/03/We_Can_Do_It.jpg" />
