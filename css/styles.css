@@ -7,6 +7,8 @@
 body {
   font-family: 'Mitr', sans-serif;
 	text-align: center;
+	background-color: #fffaf0;
+	color: #030450;
 }
 
 #post {
