@@ -27,8 +27,26 @@ document.body.onscroll = function () {
   } else {
     document.querySelector(".text:nth-of-type(3)").dataset.active = 0;
   }
+
+  let a1 = document.querySelector(".cartoon:nth-of-type(3)").offsetTop;
+  if (scrollY + viewHeight - 500 >= a1) {
+    document.querySelector(".cartoon:nth-of-type(3)").src="img/cartoon/artwork-3.2.png";
+  } else {
+    document.querySelector(".cartoon:nth-of-type(3)").src="img/cartoon/artwork-3.1.png"
+  }
+  if (scrollY + viewHeight - 550 >= a1) {
+    document.querySelector(".cartoon:nth-of-type(3)").src="img/cartoon/artwork-3.3.png";
+  }
+
+  let s1 = document.querySelector(".slider").offsetTop;
+  if (scrollY + viewHeight - 80 >= s1) {
+    document.querySelector(".slider").dataset.active = 1;
+  } else {
+    document.querySelector(".slider").dataset.active = 0;
+  }
 };
 
+/*slide*/
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -46,3 +64,4 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";  
 }
+/*slide*/
