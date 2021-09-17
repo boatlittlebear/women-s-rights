@@ -1,74 +1,66 @@
-document.body.onscroll = function () {
-  let scrollY = window.scrollY;
-  let viewHeight = window.innerHeight;
+let scroller = document.querySelector("#scroller");
+const output = document.querySelector("#output");
 
+let t = document.querySelector(".page-2 > .text").offsetTop;
 
-  document.querySelector("#height").innerText = scrollY;
-  document.body.style.setProperty("--scrollY", scrollY);
-  document.body.style.setProperty("--h", scrollY / 10);
+scroller.addEventListener("scroll", event => {
+  output.textContent = `scrollTop: ${scroller.scrollTop}`;
+  output2.textContent = `T1Top: ${t1}`;
+});
 
-  let t1 = document.querySelector(".text:nth-of-type(1)").offsetTop;
-  if (scrollY + viewHeight - 250 >= t1) {
-    document.querySelector(".text:nth-of-type(1)").dataset.active = 1;
+scroller.addEventListener("scroll", event => {
+  if (scroller.scrollTop >= 0) {
+    document.querySelector(".page-1 > .cartoon").style.animationPlayState = "running";
   } else {
-    document.querySelector(".text:nth-of-type(1)").dataset.active = 0;
+    document.querySelector(".page-1 > .cartoon").style.animationPlayState = "paused";
   }
 
-  let t2 = document.querySelector(".text:nth-of-type(2)").offsetTop;
-  if (scrollY + viewHeight - 250 >= t2) {
-    document.querySelector(".text:nth-of-type(2)").dataset.active = 1;
+  if (scroller.scrollTop >= 969) {
+    document.querySelector(".page-2 > .text").dataset.active = 1;
   } else {
-    document.querySelector(".text:nth-of-type(2)").dataset.active = 0;
+    document.querySelector(".page-2 > .text").dataset.active = 0;
   }
 
-  let t3 = document.querySelector(".text:nth-of-type(3)").offsetTop;
-  if (scrollY + viewHeight - 250 >= t3) {
-    document.querySelector(".text:nth-of-type(3)").dataset.active = 1;
+  if (scroller.scrollTop >= 1938) {
+    document.querySelector(".page-3 > .text").dataset.active = 1;
   } else {
-    document.querySelector(".text:nth-of-type(3)").dataset.active = 0;
+    document.querySelector(".page-3 > .text").dataset.active = 0;
   }
 
-  let t4 = document.querySelector(".text:nth-of-type(4)").offsetTop;
-  if (scrollY + viewHeight - 250 >= t4) {
-    document.querySelector(".text:nth-of-type(4)").dataset.active = 1;
+  if (scroller.scrollTop >= 2907) {
+    document.querySelector(".page-4 > .text").dataset.active = 1;
   } else {
-    document.querySelector(".text:nth-of-type(4)").dataset.active = 0;
+    document.querySelector(".page-4 > .text").dataset.active = 0;
   }
 
-  let a1 = document.querySelector(".cartoon:nth-of-type(3)").offsetTop;
-  if (scrollY + viewHeight - 500 >= a1) {
-    document.querySelector(".cartoon:nth-of-type(3)").src="img/cartoon/artwork-3.2.png";
+  if (scroller.scrollTop >= 3876) {
+    document.querySelector(".page-5 > .text").dataset.active = 1;
   } else {
-    document.querySelector(".cartoon:nth-of-type(3)").src="img/cartoon/artwork-3.1.png"
-  }
-  if (scrollY + viewHeight - 550 >= a1) {
-    document.querySelector(".cartoon:nth-of-type(3)").src="img/cartoon/artwork-3.3.png";
+    document.querySelector(".page-5 > .text").dataset.active = 0;
   }
 
-  let s1 = document.querySelector(".slider").offsetTop;
-  if (scrollY + viewHeight - 80 >= s1) {
-    document.querySelector(".slider").dataset.active = 1;
+  if (scroller.scrollTop >= 4845) {
+    document.querySelector(".page-6 > .cartoon").style.animationPlayState = "running";
   } else {
-    document.querySelector(".slider").dataset.active = 0;
+    document.querySelector(".page-6 > .cartoon").style.animationPlayState = "paused";
   }
-};
 
-/*slide*/
-var slideIndex = 1;
-showDivs(slideIndex);
+  if (scroller.scrollTop >= 5814) {
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+  } else {
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
   }
-  x[slideIndex-1].style.display = "block";  
-}
-/*slide*/
+
+  if (scroller.scrollTop >= 6783) {
+    document.querySelector(".page-8 > .text").dataset.active = 1;
+  } else {
+    document.querySelector(".page-8 > .text").dataset.active = 0;
+  }
+  
+  if (scroller.scrollTop >= 7752) {
+    document.querySelector(".page-9 > .text").dataset.active = 1;
+  } else {
+    document.querySelector(".page-9 > .text").dataset.active = 0;
+  }
+});
+

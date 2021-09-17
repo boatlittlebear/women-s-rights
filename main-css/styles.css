@@ -1,63 +1,46 @@
 :root {
 	--h: 0;
 	--scrollY: 0;
-	--cartoon-1 : url(https://media.discordapp.net/attachments/881913497003372584/881955546603876362/Untitled_Artwork.png?width=753&height=683)
+}
+
+/** Reset / Basic styling */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 body {
   font-family: 'Mitr', sans-serif;
-	text-align: center;
-	background-color: #fffaf0;
 	color: #030450;
+  background-color: #FFA8A2;
 }
 
-/*
 #post {
   font-size:3em;
   position:fixed;
   top:0;
   left:0;
   background:#fffc;
-}*/
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  overflow: hidden;
-  position: sticky;
-  background-color: #fff799;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  z-index: 1;
-
+  z-index: 3;
 }
 
-li {
-  float: left;
+#output {
+  font-size:3em;
+  position:fixed;
+  top:0;
+  left:0;
+  background:#fffc;
+  z-index: 3;
 }
 
-li a {
-  display: block;
-	color: #030450;
-
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+h1 {
+	font-size: 3em;
 }
 
-.cartoon {
-	width: 55%;
-  filter: drop-shadow(0 0 5px #333);
-}
-
-.text{
-	font-size: 3vw;
-	margin: 200px 10px 400px;
+.text {
 	opacity: 0;
-	transition: 1.5s;
+  transition: 1.5s;
 }
 
 .text[data-active="0"] {
@@ -68,27 +51,73 @@ li a {
 	opacity: 1;
 }
 
-.slider {
-  display: flex;
-  justify-content: space-evenly;
+img {
+  width: 30%;
+}
+
+/** Section inner layout */
+section {
+	display: flex;
   align-items: center;
-  font-size: 1.5vw;
-  opacity: 0;
-	transition: .8s;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
-.button {
-  height: 5vw;
+/** Full Page Scroll-Snapping HTML Sections */
+.scrollY {
+  height: 100vh;
+	overflow-y: auto;
+  scroll-snap-type: y mandatory;
 }
 
-.mySlides {
-  width: 55%;
+.scrollY section {
+  width: 100%;
+	height: 100%;
+	text-align: center;
+	position: relative;
+	scroll-snap-align: center;
 }
 
-.slider[data-active="0"] {
-	opacity: 0;
+/** Cartoon */
+.cartoon {
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+.cartoon.cartoon-1 {
+  background-image: url("/img/cartoon/gif-1/1.PNG");
+  animation: GIF-1 1.5s steps(1) 0s normal;
 }
 
-.slider[data-active="1"] {
-	opacity: 1;
+.cartoon.cartoon-2 {
+  background-image: url("/img/cartoon/gif-2/1.PNG");
+  animation: GIF-2 1.5s steps(1) 0s normal infinite;
+  animation-play-state: paused;
+}
+
+@keyframes GIF-1 {
+  0%   {  background-image: url("/img/cartoon/gif-1/2.PNG");  }
+  50%   {  background-image: url("/img/cartoon/gif-1/3.PNG");  }
+  100%   {  background-image: url("/img/cartoon/gif-1/1.PNG");  }
+}
+
+@keyframes GIF-2 {
+  0%   {  background-image: url("/img/cartoon/gif-2/2.PNG");  }
+  50%   {  background-image: url("/img/cartoon/gif-2/1.PNG");  }
+  100%   {  background-image: url("/img/cartoon/gif-2/2.PNG");  }
+}
+
+/** Page */
+  .page-1 {
+    background-color: #FFA8A2;
+  }
+  .page-2 {
+  }
+
+@keyframes Fade {
+  from {  opacity: 0; }
+  to {  opacity: 1; }
 }
