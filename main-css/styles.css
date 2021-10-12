@@ -12,15 +12,49 @@
 
 body {
   font-family: 'Mitr', sans-serif;
-	color: #030450;
-  background-color: #FFA8A2;
+	color: #000000;
+  background-color: #FFFFFF;
+}
+
+/** Header */
+header {
+	position: sticky;
+	top: 0;
+	font-size: 16px;
+  z-index: 1;
+}
+
+header a {
+  color: hsl(0, 0%, 0%);
+  text-decoration-line: none;
+}
+
+#header {
+	display: flex;  
+  justify-content: space-evenly;
+  align-items: center;
+	background: #FFFFFF;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu p {
+  margin: 0rem 1rem;
+}
+
+.container {
+  width: 100%;
+  padding: 0rem 5rem;
 }
 
 #post {
-  font-size:3em;
-  position:fixed;
-  top:0;
-  left:0;
+  font-size: 3em;
+  position: fixed;
+  top: 0;
+  left: 0;
   background:#fffc;
   z-index: 3;
 }
@@ -34,27 +68,6 @@ body {
   z-index: 3;
 }
 
-h1 {
-	font-size: 3em;
-}
-
-.text {
-	opacity: 0;
-  transition: 1.5s;
-}
-
-.text[data-active="0"] {
-	opacity: 0;
-}
-
-.text[data-active="1"] {
-	opacity: 1;
-}
-
-img {
-  width: 30%;
-}
-
 /** Section inner layout */
 section {
 	display: flex;
@@ -62,6 +75,8 @@ section {
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  padding: 71.0156px 10rem 0;
+  font-size: 3em;
 }
 
 /** Full Page Scroll-Snapping HTML Sections */
@@ -79,45 +94,96 @@ section {
 	scroll-snap-align: center;
 }
 
-/** Cartoon */
-.cartoon {
+/** Artwork */
+.artwork {
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
-}
-.cartoon.cartoon-1 {
-  background-image: url("/img/cartoon/gif-1/1.PNG");
-  animation: GIF-1 1.5s steps(1) 0s normal;
+  background-size: cover;
 }
 
-.cartoon.cartoon-2 {
-  background-image: url("/img/cartoon/gif-2/1.PNG");
-  animation: GIF-2 1.5s steps(1) 0s normal infinite;
-  animation-play-state: paused;
+.artwork[data-image="logo"] {
+  width: 50%;
+  height: 50%;
+  background-image: url("/img/logo/logo.png");
 }
 
-@keyframes GIF-1 {
-  0%   {  background-image: url("/img/cartoon/gif-1/2.PNG");  }
-  50%   {  background-image: url("/img/cartoon/gif-1/3.PNG");  }
-  100%   {  background-image: url("/img/cartoon/gif-1/1.PNG");  }
+.artwork[data-image="page-1"] {
+  background-image: url("/img/page-1/artwork.png");
 }
 
-@keyframes GIF-2 {
-  0%   {  background-image: url("/img/cartoon/gif-2/2.PNG");  }
-  50%   {  background-image: url("/img/cartoon/gif-2/1.PNG");  }
-  100%   {  background-image: url("/img/cartoon/gif-2/2.PNG");  }
+.artwork[data-image="page-4"] {
+  background-image: url("/img/page-4/artwork.gif");
+}
+
+/** Twitter */
+.twitter-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+.twitter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  font-size: 18px;
+  text-align: left;
+  padding: 3rem 0;
+}
+
+.twitter img {
+  width: 75px;
+  border-radius: 50%;
+}
+
+.twitter i {
+  padding: 0 .5rem;
+}
+
+.twitter .profile {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 1rem;
+}
+
+.twitter .user, .twitter .status {
+  padding: 0 1rem;
+}
+
+.twitter .user > p:nth-child(2) {
+  color: #787E83;
+}
+
+.twitter .status {
+  font-size: 14px;
+}
+
+.twitter .headline {
+  width: 100%;
+  border: 1px solid #26323B;
+}
+
+.twitter .headline > hr {
+  border: 0px solid #26323B;
 }
 
 /** Page */
-  .page-1 {
-    background-color: #FFA8A2;
-  }
-  .page-2 {
-  }
+.page-0 {
+  font-size: 30px;
+  color: #2C2B42;
+  background-color: #FFD269;
+}
 
-@keyframes Fade {
-  from {  opacity: 0; }
-  to {  opacity: 1; }
+.page-7, .page-8, .page-9 {
+  font-size: 30px;
+}
+
+.page-10 {
+  color: #FFFFFF;
+  background-color: #16202A;
 }
