@@ -101,6 +101,11 @@ section {
 	scroll-snap-align: center;
 }
 
+/**  Chart and Data */
+.chart-warpper{
+  margin: 0 auto;
+}
+
 /** Artwork */
 .artwork {
   width: 100%;
