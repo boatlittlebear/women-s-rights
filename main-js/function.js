@@ -1,7 +1,8 @@
 let scroller = document.querySelector("#scroller");
 const output = document.querySelector("#output");
-
 let t = document.querySelector(".page-2 > .text").offsetTop;
+
+
 
 scroller.addEventListener("scroll", event => {
   output.textContent = `scrollTop: ${scroller.scrollTop}`;
