@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Noto+Serif+Thai&display=swap');
+
 :root {
 	--h: 0;
 	--scrollY: 0;
@@ -11,9 +14,13 @@
 }
 
 body {
-  font-family: 'Mitr', sans-serif;
+  font-family: 'Noto Serif Thai', serif;
 	color: #000000;
   background-color: #FFFFFF;
+}
+
+code {
+  font-family: 'Mitr', sans-serif;
 }
 
 /** Header */
