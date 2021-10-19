@@ -149,11 +149,18 @@ section {
 
 .twitter img {
   width: 75px;
+  height: 75px;
+  object-fit: cover;
   border-radius: 50%;
 }
 
 .twitter i {
+  color: #FFFFFF;
   padding: 0 .5rem;
+}
+
+.twitter > p:nth-child(1) {
+  color: #787E83;
 }
 
 .twitter .profile {
@@ -191,8 +198,30 @@ section {
   background-color: #FFD269;
 }
 
-.page-7, .page-8, .page-9 {
-  font-size: 30px;
+.page-7 p, .page-8 p, .page-9 p {
+  font-size: 20px;
+  text-align: left;
+}
+
+.flex-page-9 {
+  display: flex;
+  align-items: center;
+}
+
+.flex-row-logo-page-9 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.flex-logo-page-9 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-logo-page-9 > img {
+  width: 200px;
 }
 
 .page-10 {
