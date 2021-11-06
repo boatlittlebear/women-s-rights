@@ -224,7 +224,7 @@ section {
   width: 200px;
 }
 
-.page-10 {
+.page-10 ,.page-11 {
   color: #FFFFFF;
   background-color: #16202A;
 }
@@ -241,7 +241,7 @@ button {
 }
 
 .modal-container{
-  background-color: rgba(0, 0, 0, 0.562);
+  background-color: rgba(0, 0, 0, 0.911);
   display: flex;
   align-items: center;
   justify-content: center;
