@@ -27,8 +27,12 @@ code {
 header {
 	position: sticky;
 	top: 0;
-	font-size: 16px;
+	font-size: 1.5vh;
   z-index: 1;
+}
+
+#header {
+  height: 7vh;
 }
 
 header a {
@@ -50,6 +54,7 @@ header a {
 
 .menu p {
   margin: 0rem 1rem;
+  font-size: 1.5vh;
 }
 
 .container {
@@ -82,8 +87,8 @@ section {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  padding: 71.0156px 10rem 0;
-  font-size: 3em;
+  font-size: 5vh;
+  padding: 7vh 5vh 0;
 }
 
 /** Full Page Scroll-Snapping HTML Sections */
@@ -108,16 +113,15 @@ section {
 
 /** Artwork */
 .artwork {
-  width: 100%;
-  height: 100%;
+  width: 100vh;
+  height: 100vw;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .artwork[data-image="logo"] {
-  width: 50%;
-  height: 50%;
+  height: 30vh;
   background-image: url("/img/logo/logo.png");
 }
 
@@ -179,7 +183,7 @@ section {
 }
 
 .twitter .status {
-  font-size: 14px;
+  font-size: 1.6vh;
 }
 
 .twitter .headline {
@@ -193,13 +197,19 @@ section {
 
 /** Page */
 .page-0 {
-  font-size: 30px;
+  font-size: 2.5vh;
   color: #2C2B42;
   background-color: #FFD269;
+  justify-content: space-evenly;
 }
 
 .page-7 p, .page-8 p, .page-9 p {
-  font-size: 20px;
+  font-size: 1.8vh;
+  text-align: left;
+}
+
+.page-7 p:nth-child(1), .page-8 p:nth-child(1), .page-9 p:nth-child(1) {
+  font-size: 3vh;
   text-align: left;
 }
 
@@ -221,7 +231,7 @@ section {
 }
 
 .flex-logo-page-9 > img {
-  width: 200px;
+  width: 10vw;
 }
 
 .page-10 ,.page-11, .page-12 {
@@ -232,12 +242,12 @@ section {
 /************************* popup****************************/
 
 button {
-  background-color: #47a386;
+  background-color: transparent;
   border: 0;
-  border-radius: 0 2px 4px rgb(0, 0, 0, 0.2);
-  color: #fff;
-  padding: 10px 25px;
-  font-size: 14px;
+  color: #787E83;
+  padding: 1rem;
+  font-size: 1.6vh;
+  cursor: pointer;
 }
 
 .modal-container{
@@ -254,14 +264,10 @@ button {
   width: 100vw;
 }
 
-
-
 .modal-container.show {
   pointer-events: auto;
   opacity: 1;
 }
-
-
 
 .modal{
   background-color: #fff;
@@ -273,5 +279,7 @@ button {
   text-align: center;
 }
 
-
+.close {
+  color: red;
+}
 /************************* popup****************************/
