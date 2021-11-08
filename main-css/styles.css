@@ -148,14 +148,16 @@ section {
   flex-direction: column;
   font-size: 18px;
   text-align: left;
-  padding: 3rem 0;
 }
 
-.twitter img {
-  width: 75px;
-  height: 75px;
-  object-fit: cover;
+.twitter .imgprofile {
+  width: 7.5vh;
+  height: 7.5vh;
   border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/img/page-10/profile-1.jpg");
 }
 
 .twitter i {
@@ -175,15 +177,12 @@ section {
 }
 
 .twitter .user, .twitter .status {
+  font-size: 1.5vh;
   padding: 0 1rem;
 }
 
 .twitter .user > p:nth-child(2) {
   color: #787E83;
-}
-
-.twitter .status {
-  font-size: 1.6vh;
 }
 
 .twitter .headline {
@@ -234,11 +233,15 @@ section {
   width: 10vw;
 }
 
-.page-10 ,.page-11, .page-12 {
+.page-10 ,.page-11, .page-12, .page-13 {
+  justify-content: space-around;;
   color: #FFFFFF;
   background-color: #16202A;
 }
 
+.twitterheader {
+  font-size: 3vh;
+}
 /************************* popup****************************/
 
 button {
