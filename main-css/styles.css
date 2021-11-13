@@ -291,114 +291,109 @@ button {
 .close {
   color: #000;
 }
-/************************* popup****************************/
-/************************* cluster****************************/
+
+/** Cluster */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@300&family=Noto+Serif:wght@400;700&display=swap');
 
 .fullscreen{
   width: 100%;
-  height: 100vh;
-  
+  height: 100vh; 
 }
+
 .flex-center-parent{
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .container{
-  font-size: 16px;
+  font-size: 2vh;
   font-family: 'Noto Serif', serif;
   color: blue;
-  max-width: 1024px;
-  padding: 0 3rem;
-  width: 30%;
-  height: 80%;
-
-
 }
+
 #WOMEN{
   position: absolute;
-  transform: translate(22px,7px);
   color: red;
-
 }
+
 #SELFLOVE{
   position: absolute;
-  transform: rotate(90deg) translate(-60px,20px);
-  
+  transform: rotate(90deg) translate(-8vh, 2.5vh);
 }
+
 #SELFLOVE2{
   position: absolute;
-  transform: rotate(-90deg) translate(-110px,130px);  
-  font-size: 22px;
+  transform: rotate(-90deg) translate(-15vh, 16vh);  
+  font-size: 2.5vh;
 }
+
 #INSPIRED{
   position: absolute;
-  transform: translate(57px,30px);
-  
+  transform: translate(6.5vh, 3.5vh);
 }
+
 #RESPECT{
   position: absolute;
   transform: translate(60px,-20px);
-  
 }
+
 #BRAVE{
   position: absolute;
   transform: translate(30px,-40px);
-  
 }
+
 #STRENGTH{
   position: absolute;
   transform: rotate(90deg) translate(85px,75px);
 }
+
 #MOTIVATION{
   position: absolute;
   transform: translate(20px,50px);
-  
 }
+
 #MOTIVATION2{
   position: absolute;
   transform: translate(-92px, -20px);
   font-size: 15px;
-  
 }
+
 #BEYOURSELF{
   position: absolute;
   transform: rotate(-90deg) translate(-60px,110px);
-  
 }
+
 #BEYOURSELF2{
   position: absolute;
   transform: rotate(-90deg) translate(95px,-50px);
-
 }
+
 #CONFIDENCE{
   position: absolute;
   transform: translate(22px,90px);
-  
 }
+
 #POWERFUL{
   position: absolute;
   transform: translate(160px);
   font-size: 13px;
-  
 }
+
 #POWERFUL2{
   position: absolute;
   transform: translate(30px,112px);
- 
-  
 }
+
 #SELFESTEEM{
   position: absolute;
   transform: translate(28px,70px);
   font-size: 13px;
-  
 }
+
 #AMAZING{
   position: absolute;
   transform: translate(-108px,3px);
-  
 }
 /************************* cluster****************************/
 
