@@ -73,3 +73,5 @@ open6.addEventListener('click',() => {
 close6.addEventListener('click',() => {
     modal_container6.classList.remove('show')
 });
+
+
