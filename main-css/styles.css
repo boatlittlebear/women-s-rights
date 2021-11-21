@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mitr&family=Noto+Serif+Thai&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+
+
+
 :root {
 	--h: 0;
 	--scrollY: 0;
@@ -293,7 +297,7 @@ button {
 }
 /************************* popup****************************/
 /************************* cluster****************************/
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@300&family=Noto+Serif:wght@400;700&display=swap');
+
 
 .fullscreen{
   width: 100%;
@@ -313,79 +317,122 @@ button {
   padding: 0 3rem;
   width: 30%;
   height: 80%;
+  transform: scale(1.6);
 
 
 }
 #WOMEN{
   position: absolute;
   transform: translate(22px,7px);
-  color: red;
+  color: hsl(359, 88%, 67%);
+  animation: women 1s;
+  
 
+}
+@keyframes women {
+  0% {
+    transform: translate(-100px,7px);
+  }
+  100% {
+    transform: translate(22px,7px);;
+  }
 }
 #SELFLOVE{
   position: absolute;
   transform: rotate(90deg) translate(-60px,20px);
-  
+  color: hsl(42, 98%, 54%);
+  animation: selflove 1s;
+}
+@keyframes selflove {
+  0% {
+    transform: rotate(90deg) translate(-40px,20px);
+  }
+  100% {
+    transform: rotate(90deg) translate(-60px,20px);
+  }
 }
 #SELFLOVE2{
   position: absolute;
   transform: rotate(-90deg) translate(-110px,130px);  
   font-size: 22px;
+  color: hsl(359, 88%, 67%);
+  animation-delay: 0.5s;
 }
 #INSPIRED{
   position: absolute;
   transform: translate(57px,30px);
+  color: hsl(12, 74%, 53%);
   
 }
 #RESPECT{
   position: absolute;
   transform: translate(60px,-20px);
-  
+  color:  hsl(42, 98%, 54%);
+  animation-delay: 0.5s;
 }
 #BRAVE{
   position: absolute;
   transform: translate(30px,-40px);
-  
+  color: hsl(245, 22%, 22%);
 }
 #STRENGTH{
   position: absolute;
   transform: rotate(90deg) translate(85px,75px);
+  color: hsl(42, 98%, 54%);
 }
 #MOTIVATION{
   position: absolute;
   transform: translate(20px,50px);
+  color: hsl(245, 22%, 22%);
+  animation-delay: 0.5s;
   
 }
 #MOTIVATION2{
   position: absolute;
   transform: translate(-92px, -20px);
   font-size: 15px;
+  color: hsl(12, 74%, 53%);
   
 }
 #BEYOURSELF{
   position: absolute;
   transform: rotate(-90deg) translate(-60px,110px);
+  color: hsl(245, 22%, 22%);
   
 }
 #BEYOURSELF2{
   position: absolute;
   transform: rotate(-90deg) translate(95px,-50px);
+  color: hsl(245, 22%, 22%);
 
 }
 #CONFIDENCE{
   position: absolute;
   transform: translate(22px,90px);
+  color: hsl(42, 98%, 54%);
+  animation: confidence 1s;
+
   
+}
+@keyframes confidence {
+  0% {
+    transform: translate(22px,220px);
+  }
+  100% {
+    transform: translate(22px,90px);
+  }
 }
 #POWERFUL{
   position: absolute;
   transform: translate(160px);
   font-size: 13px;
+  color: hsl(12, 74%, 53%);
   
 }
 #POWERFUL2{
   position: absolute;
   transform: translate(30px,112px);
+  color: hsl(12, 74%, 53%);
  
   
 }
@@ -393,11 +440,28 @@ button {
   position: absolute;
   transform: translate(28px,70px);
   font-size: 13px;
+  color: hsl(12, 74%, 53%);
   
 }
 #AMAZING{
   position: absolute;
   transform: translate(-108px,3px);
+  color: hsl(12, 74%, 53%);
   
 }
+
 /************************* cluster****************************/
+/************************* animation****************************/
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in {
+	animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/************************* animation****************************/
