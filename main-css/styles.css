@@ -553,57 +553,57 @@ button {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  padding-bottom: 10px;
 }
 
 .flexbox-2{
   display: flex;
   box-sizing: border-box;
   flex-direction: row;
-  width: 70%;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: center;
-  overflow: hidden;
-  margin-bottom: 10px;
+  align-items: flex-end;
 }
 
-.grid-item{
-  display: grid;
+.flex-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   grid-column-gap: 10px;
   grid-template-columns: auto auto;
   justify-content: center;
   padding: 10px;
   font-size: 1rem;
-  justify-content: center;
-  align-items: center;
 }
 
-.item-body{
-  display: block;
-  box-sizing: border-box;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 10px;
-}
-
-.radius-1{
+.circle1 {
   background-color: #1f374d;
-  width: 40px;
-  height: 40px;
-  border-radius: 100px;
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
 }
-.radius-2{
+
+.circle2 {
   background-color: #f2311f;
-  width: 40px;
-  height: 40px;
-  border-radius: 100px;
+  width: 3vh;
+  height: 3vh;
+  border-radius: 50%;
 }
+
 .content {
   background: transparent;
-  padding: 1rem;
   font-size: 1rem;
 }
 
+.content1 {
+  height: 30vw;
+}
+
+.content2 {
+  height: 25vw;
+}
+
+.scales {
+  height: 30vw;
+}
 /************************ flexbox ******************************/
