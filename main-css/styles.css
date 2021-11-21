@@ -490,6 +490,10 @@ h1 {
 }
 
 .scoreArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .prizeImage {
@@ -506,9 +510,8 @@ h1 {
 }
 
 .scorePct {
-  position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 70vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -517,16 +520,16 @@ h1 {
   left: 0;
 }
 
-.scorePct[data-image="a1"] {
-  background-image: url("/img/page-20/A1.gif");
+.scorePct[data-image="share1"] {
+  background-image: url("/img/page-20/share-1.png");
 }
 
-.scorePct[data-image="a2"] {
-  background-image: url("/img/page-20/A2.gif");
+.scorePct[data-image="share2"] {
+  background-image: url("/img/page-20/share-2.png");
 }
 
-.scorePct[data-image="a3"] {
-  background-image: url("/img/page-20/A3.gif");
+.scorePct[data-image="share3"] {
+  background-image: url("/img/page-20/share-3.png");
 }
 
 

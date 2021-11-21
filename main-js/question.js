@@ -48,9 +48,11 @@ showQuestion();
 
 //reset event
 document.querySelector(".scoreArea button").addEventListener("click", () => {
-  currentQuestion = 0;
-  correctAnswers = 0;
-  showQuestion();
+  var url="https://empowered-women.netlify.app"; //Set desired URL here
+  var img="https://media.discordapp.net/attachments/883616927925297193/912022146019106846/Frame_92.jpg?width=384&height=683"; //Set Desired Image here
+  var totalurl=encodeURIComponent(url+'?img='+img);
+
+  window.open ('http://www.facebook.com/sharer.php?u='+totalurl,'','width=500, height=500, scrollbars=yes, resizable=no');
 });
 
 //Functions
@@ -95,22 +97,14 @@ function finishQuiz() {
   let points = correctAnswers;
   
   if (points >= 2) {
-    scoreText1.innerHTML = "เพิ่มความนับถือให้ตัวเอง";
-    scorePct.style.color = "#0d630d";
-    scorePct.dataset.image = "a1"
-    document.querySelector(".scoreText2").innerHTML = description[0];
+    scorePct.dataset.image = "share1"
   } else if (points >= 1) {
-    scoreText1.innerHTML = "ต่อสู้กับการปฏิเสธ";
-    scorePct.style.color = "#ffc900";
-    scorePct.dataset.image = "a2"
-    document.querySelector(".scoreText2").innerHTML = description[1];
+    scorePct.dataset.image = "share2"
 
   } else if (points == 0) {
-    scoreText1.innerHTML = "เลือกที่จะเป็นนักรบ ไม่ใช่เหยื่อ";
-    scorePct.style.color = "#f00000";
-    scorePct.dataset.image = "a3"
-    document.querySelector(".scoreText2").innerHTML = description[2];
+    scorePct.dataset.image = "share3"
   }
-  scoreArea.style.display = "block";
+  
+  scoreArea.style.display = "flex";
   questionArea.style.display = "none";
 }
