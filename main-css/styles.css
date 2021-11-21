@@ -427,28 +427,6 @@ button {
   flex-direction: column;
 }
 
-
-
-h1 {
-  color: #fff;
-  margin: 20px 0;
-}
-
-.progress {
-  height: 5px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-}
-
-.progress--bar {
-  background-color: #00ff00;
-  height: 100%;
-  transition: all ease 0.5s;
-  width: 0%;
-}
-
 .questionArea,
 .scoreArea {
   display: none;
@@ -479,6 +457,29 @@ h1 {
 
 .option:hover {
   background-color: #e7e7e7;
+}
+
+.save {
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  padding: 0rem 2rem;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 70px;
+  font-family: 'Mitr', sans-serif;
+  font-size: 2vh;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.save:hover {
+  background-color: #e7e7e7;
+}
+
+.scoreArea a {
+  text-decoration: none;
 }
 
 .page-20 span {
@@ -531,7 +532,6 @@ h1 {
 .scorePct[data-image="share3"] {
   background-image: url("/img/page-20/share-3.png");
 }
-
 
 .scoreText2 {
   font-size: 1rem;
