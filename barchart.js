@@ -28,4 +28,4 @@ var chartBar = new Chart(bar, {
 })
 
 chartBar.canvas.parentNode.style.height = '50vh'; 
-chartBar.canvas.parentNode.style.width = '100vw';
+chartBar.canvas.parentNode.style.width = '90vw';

@@ -455,10 +455,6 @@ button {
   cursor: pointer;
 }
 
-.option:hover {
-  background-color: #e7e7e7;
-}
-
 .save {
   display: flex;
   align-items: center;
@@ -472,10 +468,6 @@ button {
   font-size: 2vh;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
-}
-
-.save:hover {
-  background-color: #e7e7e7;
 }
 
 .scoreArea a {
