@@ -80,6 +80,20 @@ header a {
   z-index: 3;
 }
 
+footer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 7vh;
+  bottom: 0;
+	font-size: 1.5vh;
+  padding: 1rem;
+  background-color: #353349;
+  color: #fff;
+}
+
 /** Section inner layout */
 section {
 	display: flex;
@@ -195,6 +209,10 @@ section {
   border: 0px solid #26323B;
 }
 
+.twitterheader {
+  font-size: 3vh;
+}
+
 /** Page */
 .page-0 {
   font-size: 2.5vh;
@@ -210,7 +228,7 @@ section {
 
 .page-7 p:nth-child(1), .page-8 p:nth-child(1), .page-9 p:nth-child(1) {
   font-size: 3vh;
-  text-align: left;
+  text-align: center;
 }
 
 .flex-page-9 {
@@ -240,9 +258,7 @@ section {
   background-color: #16202A;
 }
 
-.twitterheader {
-  font-size: 3vh;
-}
+
 
 /** Popup */
 button {
@@ -397,4 +413,140 @@ button {
 }
 /************************* cluster****************************/
 
+.page-20 {
+  padding: 7vh 5vh;
+}
 
+.page-20 .question {
+  font-size: 2.7vh;
+  margin: 2rem 0rem;
+}
+
+.page-20 .quiz {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+h1 {
+  color: #fff;
+  margin: 20px 0;
+}
+
+.progress {
+  height: 5px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.progress--bar {
+  background-color: #00ff00;
+  height: 100%;
+  transition: all ease 0.5s;
+  width: 0%;
+}
+
+.questionArea,
+.scoreArea {
+  display: none;
+}
+
+.questionArea {
+  max-width: 600px;
+  width: 100%;
+  padding: 0 15px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  height: 10vh;
+  margin: 1rem 0rem;
+  padding: 0rem 2rem;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 70px;
+  font-family: 'Noto Serif Thai', serif;
+  text-align: left;
+  font-size: 1.5vh;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #e7e7e7;
+}
+
+.page-20 span {
+  margin-left: 5px;
+  margin-right: 10px;
+  color: #F56363;
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+.scoreArea {
+}
+
+.prizeImage {
+  width: auto;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.scoreText1 {
+  color: #F56868;
+  font-size: 5vh;
+  font-weight: bold;
+  text-align: left;
+}
+
+.scorePct {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.scorePct[data-image="a1"] {
+  background-image: url("/img/page-20/A1.gif");
+}
+
+.scorePct[data-image="a2"] {
+  background-image: url("/img/page-20/A2.gif");
+}
+
+.scorePct[data-image="a3"] {
+  background-image: url("/img/page-20/A3.gif");
+}
+
+
+.scoreText2 {
+  font-size: 1rem;
+  text-align: left;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.scoreArea button {
+  border: 0;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ccc;
+  padding: 10px 80px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.scoreArea button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}

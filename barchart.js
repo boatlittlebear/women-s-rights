@@ -16,12 +16,16 @@ var chartBar = new Chart(bar, {
     },
 
     option: {
-        scales: {
-            x: {
-                grid: {
-                offset: true
-                }
+        responsive: true,
+    },
+    options: {
+        plugins: {
+            legend: {
+                display: false
             }
         }
     }
-});
+})
+
+chartBar.canvas.parentNode.style.height = '50vh'; 
+chartBar.canvas.parentNode.style.width = '100vw';
