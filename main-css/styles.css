@@ -217,7 +217,6 @@ section {
   font-size: 2.5vh;
   color: #2C2B42;
   background-color: #FFD269;
-  justify-content: space-evenly;
 }
 
 .page-7 p, .page-8 p, .page-9 p {
@@ -259,6 +258,10 @@ section {
 
 .flex-logo-page-9 p {
   text-align: center;
+}
+
+.page-7 .description, .page-8 .description, .page-9 .description {
+  padding: 0 20vw;
 }
 
 .flex-logo-page-9 > img {
@@ -826,14 +829,14 @@ button {
     text-align: left;
   }
 
-  .page-9 p {
+  .page-7 .description, .page-8 .description, .page-9 .description{
     font-size: 1.5vh;
+    padding: 0;
   }
 
   .twitter-wrapper {
     width: 80vw;
   }
-
 }
 /************************* slick *****************************/
 
