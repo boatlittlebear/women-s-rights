@@ -784,3 +784,87 @@ button {
   }
 }
 /************************* slick *****************************/
+
+/************************* paper ***************************/
+.paper-1{
+  transform: translate(12vw, -60vh);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.paper-2{
+  transform: translate(17vw, -45vh);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.paper-3{
+  transform: translate(20vw, -25vh);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.paper-4{
+  transform: translate(0vw, -5vh);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.paper-5{
+  transform: translate(-15vw, 10vh);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.paper-6{
+  transform: translate(-27vw, 25vh);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.paper-7{
+  transform: translate(-25vw, -20vh);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.paper-8{
+  transform: translate(-15vw, 0vh);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.paper-9{
+  transform: translate(0vw, 20vh);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.paper-10{
+  transform: translate(10vw, 50vh);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+.flex-center-parent{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  max-width: 1024px;
+  padding: 0 3rem;
+  width: 30%;
+  height: 80%;
+}
+/************************* paper ***************************/
