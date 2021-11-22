@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mitr&family=Noto+Serif+Thai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
 
 :root {
@@ -110,6 +111,7 @@ section {
 .scrollY {
   height: 100vh;
 	overflow-y: auto;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
 }
 
@@ -771,6 +773,12 @@ button {
     flex-direction: column;
   }
   
+  .container{
+    transform: scale(0.8);
+    margin: 0;
+    padding: 0;
+  }
+
   .carousel .box-flex p {
     font-size: 1.5vh;
     text-align: left;
