@@ -309,12 +309,9 @@ button {
   color: #000;
 }
 
-<<<<<<< HEAD
 /** Cluster */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
-=======
->>>>>>> d918e0f6bb2394755e9c27793d725faba780ca18
 /************************* cluster****************************/
 
 
@@ -338,13 +335,8 @@ button {
   width: 30%;
   height: 80%;
   transform: scale(1.6);
-<<<<<<< HEAD
 
 
-=======
-
-
->>>>>>> d918e0f6bb2394755e9c27793d725faba780ca18
 }
 #WOMEN{
   position: absolute;
@@ -495,11 +487,6 @@ button {
 .fade-in {
 	animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
-<<<<<<< HEAD
-=======
-
-/************************* animation****************************/
->>>>>>> d918e0f6bb2394755e9c27793d725faba780ca18
 
 /************************* animation****************************/
 .page-20 {
@@ -705,33 +692,58 @@ button {
 .clearfix:after{
   clear: both;
 }
+
 .carousel {
-  width: 1150px;
-  margin: 30px auto;
+  width: 50%;
+  overflow: hidden;
 }
+
 .carousel .box{
   float: left;
   width:  33%;
 }
-.carousel .box p {
-  font-size:  20px;
-  color: #000;
-  text-align: left;
-  margin: 0;
-  padding: 50px;
+
+.carousel .box-flex {
   display: flex;
-  margin-top: 50px;
-  place-items: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
-.carousel .box p img{
-  margin-bottom: 100px;
-  margin-left: 150px;
-  margin-right: 50px;
+
+.carousel .box-flex p {
+  font-size: 2vh;
+  text-align: left;
 }
-.slick-prev, .slick-next {
-  background: url(../img/tool/arrow01.png);
-  width: 22px;
-  height: 33px;
+
+.carousel .box-flex img{
+  width: 30vh;
+}
+
+.slick-prev {
+  background: url(../img/tool/left-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 4vw;
+  height: 4vh;
+  position: absolute;
+  top: 50%;
+  display: block;
+  padding: 0;
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  z-index: 100;
+}
+
+.slick-next {
+  background: url(../img/tool/right-arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 4vw;
+  height: 4vh;
   position: absolute;
   top: 50%;
   display: block;
@@ -744,12 +756,10 @@ button {
 }
 
 .slick-prev {
-  background-position: 0px;
-  left: 150px;
+  left: 20vh;
 }
 .slick-next {
-  background-position: -22px;
-  right: 150px;
+  right: 20vh;
 }
 
 @media only screen and (max-width: 1180px) { 
@@ -757,5 +767,20 @@ button {
     width: 90%;
   }
   
+  .carousel .box-flex {
+    flex-direction: column;
+  }
+  
+  .carousel .box-flex p {
+    font-size: 1.5vh;
+    text-align: left;
+  }
+
+  .slick-prev {
+    left: 5vh;
+  }
+  .slick-next {
+    right: 5vh;
+  }
 }
 /************************* slick *****************************/
