@@ -61,6 +61,7 @@ function showQuestion() {
     document.querySelectorAll(".options .option").forEach((item) => {
       item.addEventListener("click", optionsClickEvent);
     });
+    
   } else {
     finishQuiz();
   }
