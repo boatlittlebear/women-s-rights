@@ -309,9 +309,12 @@ button {
   color: #000;
 }
 
+<<<<<<< HEAD
 /** Cluster */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
+=======
+>>>>>>> d918e0f6bb2394755e9c27793d725faba780ca18
 /************************* cluster****************************/
 
 
@@ -335,8 +338,13 @@ button {
   width: 30%;
   height: 80%;
   transform: scale(1.6);
+<<<<<<< HEAD
 
 
+=======
+
+
+>>>>>>> d918e0f6bb2394755e9c27793d725faba780ca18
 }
 #WOMEN{
   position: absolute;
@@ -487,6 +495,11 @@ button {
 .fade-in {
 	animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
+<<<<<<< HEAD
+=======
+
+/************************* animation****************************/
+>>>>>>> d918e0f6bb2394755e9c27793d725faba780ca18
 
 /************************* animation****************************/
 .page-20 {
