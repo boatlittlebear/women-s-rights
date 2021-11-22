@@ -330,14 +330,19 @@ button {
   color: #000;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgb(0, 0, 0, 0.2);
-  padding: 30px 50px;
+  padding: 50px 50px;
   width: 600px;
   max-width: 100%;
   font-size: 1.5vh;
+  
 }
 
 .close {
   color: #000;
+  position: relative;
+  margin-top: -4vh;
+  margin-right: -1.7vw;
+  
 }
 
 /** Cluster */
