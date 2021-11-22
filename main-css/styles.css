@@ -170,7 +170,22 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.imgprofile[data-profile="1"] {
   background-image: url("/img/page-10/profile-1.jpg");
+}
+
+.imgprofile[data-profile="2"] {
+  background-image: url("/img/page-10/profile-2.jpg");
+}
+
+.imgprofile[data-profile="3"] {
+  background-image: url("/img/page-10/profile-3.jpg");
+}
+
+.imgprofile[data-profile="4"] {
+  background-image: url("/img/page-10/profile-4.jfif");
 }
 
 .twitter i {
