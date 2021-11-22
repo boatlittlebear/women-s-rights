@@ -1,0 +1,217 @@
+:root{
+  --hue-neutral:200;
+  --hue-wrong:0;
+  --hue-correct: 145;
+}
+.slide-container {
+    padding: 0%;  
+    width: 600px;
+    text-align: center;
+  }
+  
+  .wrapper {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+ 
+  .clash-card {
+    background: white;
+    width: 300px;
+    display: inline-block;
+    margin: auto;
+    border-radius: 19px;
+    position: relative;
+    text-align: center;
+    z-index: 99;
+  }
+  @media (min-width: 600px) {
+    .clash-card {
+      background: white;
+      width: 550px;
+      display: inline-block;
+      margin: auto;
+      border-radius: 19px;
+      position: relative;
+      text-align: center;
+      z-index: 99;
+    }
+    
+  }
+  
+  .clash-card__image {
+    position: relative;
+    height: 230px;
+    margin-bottom: 35px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+  }
+  
+ 
+  .clash-card__image--0 img {
+    width: 580px;
+    position: absolute;
+    top: -75px;
+    left: -15px;
+  }
+  
+  .clash-card__image--1 img {
+    width: 500px;
+    position: absolute;
+    top: -30px;
+    left: 18px;
+  }
+  
+
+  .clash-card__image--2 img {
+    width: 420px;
+    position: absolute;
+    top: 10px;
+    left: 130px;
+  }
+  
+  
+  .clash-card__image--3 img {
+    width: 400px;
+    position: absolute;
+    top: -15px;
+    left: 70px;
+  }
+  
+
+  .clash-card__image--4 img {
+    width: 200px;
+    position: absolute;
+    top: 20px;
+    left: 170px;
+  }
+  
+  .clash-card__image--5 img {
+    width: 200px;
+    position: absolute;
+    top: 27px;
+    left: 170px;
+  }
+
+  @media (max-width: 600px) {
+    .clash-card__image--0 img {
+      width: 580px;
+      position: absolute;
+      top: -75px;
+      left: -140px;
+    }
+    
+    .clash-card__image--1 img {
+      width: 500px;
+      position: absolute;
+      top: -34px;
+      left: -105px;
+    }
+    .clash-card__image--2 img {
+      width: 420px;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .clash-card__image--3 img {
+      width: 400px;
+      position: absolute;
+      top: -15px;
+      left: -55px;
+    }
+
+    .clash-card__image--4 img {
+      width: 200px;
+      position: absolute;
+      top: 20px;
+      left: 50px;
+    }
+
+    .clash-card__image--5 img {
+      width: 200px;
+      position: absolute;
+      top: 27px;
+      left: 50px;
+    }
+  
+   
+    
+  }
+  
+  
+  .clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+  
+  .slick-prev {
+    left: 100px;
+    z-index: 999;
+  }
+  
+  .slick-next {
+    right: 100px;
+    z-index: 999;
+  }
+  .wrapperbtn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 0.1em;
+    padding: 10px 0;
+  }
+
+  
+  .btn {
+    --hue: var(--hue-neutral);
+    background-color: hsl(var(--hue), 100%, 50%);
+    border-radius: 20px;
+    color: white;
+    padding: 30px;    
+    width: 235px;
+    font-size: 16px;
+    margin: 8px 20px;
+    
+    
+  }
+  .btn.correct{
+    --hue: var(--hue-correct);
+    color:black;
+
+  }
+  .btn.wrong{
+    --hue: var(--hue-wrong);
+    color: black;
+
+  }
+
+  @media (max-width: 600px) {
+    .btn {
+      --hue: var(--hue-neutral);
+      border-radius: 20px;
+      color: white;
+      padding: 30px;    
+      width: 110px;
+      font-size: 16px;
+      margin: 8px 20px;
+      
+      
+    }
+    .btn.correct{
+      --hue: var(--hue-correct);
+  
+    }
+    .btn.wrong{
+      --hue: var(--hue-wrong);
+  
+    }
+
+  }
+
+  
+
+
+  
