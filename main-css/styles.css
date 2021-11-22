@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mitr&family=Noto+Serif+Thai&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
 
 :root {
@@ -63,15 +64,6 @@ header a {
   padding: 0rem 5rem;
 }
 
-#post {
-  font-size: 3em;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background:#fffc;
-  z-index: 3;
-}
-
 #output {
   font-size:3em;
   position:fixed;
@@ -110,6 +102,7 @@ section {
 .scrollY {
   height: 100vh;
 	overflow-y: auto;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
 }
 
@@ -128,8 +121,8 @@ section {
 
 /** Artwork */
 .artwork {
-  width: 90vw;
-  height: 100vh;
+  width: 90vh;
+  height: 100vw;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -152,7 +145,7 @@ section {
 .twitter-wrapper {
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 45vw;
 }
 
 .twitter {
@@ -235,22 +228,37 @@ section {
 .flex-page-9 {
   display: flex;
   align-items: center;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .flex-row-logo-page-9 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: baseline;
 }
 
 .flex-logo-page-9 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 10vh;
+  margin: 1rem;
+}
+
+.flex-logo-page-9 p {
+  text-align: center;
 }
 
 .flex-logo-page-9 > img {
-  width: 10vw;
+  width: 10vh;
+  margin: 1rem 0rem;
 }
 
 .page-10 ,.page-11, .page-12, .page-13 {
@@ -638,6 +646,7 @@ button {
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-end;
+  margin-block-end: 1rem;
 }
 
 .flex-item{
@@ -696,6 +705,7 @@ button {
 .carousel {
   width: 50%;
   overflow: hidden;
+  z-index: 0;
 }
 
 .carousel .box{
@@ -771,6 +781,12 @@ button {
     flex-direction: column;
   }
   
+  .container{
+    transform: scale(0.8);
+    margin: 0;
+    padding: 0;
+  }
+
   .carousel .box-flex p {
     font-size: 1.5vh;
     text-align: left;
@@ -782,6 +798,37 @@ button {
   .slick-next {
     right: 5vh;
   }
+
+  .flex-row {
+    flex-direction: column;
+  }
+
+  .flex-logo-page-9 {
+    margin: 0;
+  }
+
+  .flex-logo-page-9 > img {
+    width: 5vh;
+    margin: .5rem 0rem;
+  }
+
+  .flex-logo-page-9 p {
+    text-align: center;
+  }
+  
+  .page-7 p, .page-8 p{
+    font-size: 1.5vh;
+    text-align: left;
+  }
+
+  .page-9 p {
+    font-size: 1.5vh;
+  }
+
+  .twitter-wrapper {
+    width: 80vw;
+  }
+
 }
 /************************* slick *****************************/
 
