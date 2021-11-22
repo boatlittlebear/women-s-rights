@@ -708,6 +708,7 @@ button {
 .carousel {
   width: 1150px;
   margin: 30px auto;
+  overflow: hidden;
 }
 .carousel .box{
   float: left;
