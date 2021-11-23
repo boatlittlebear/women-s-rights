@@ -188,6 +188,22 @@ section {
   background-image: url("/img/page-10/profile-4.jfif");
 }
 
+.imgprofile[data-profile="5"] {
+  background-image: url("/img/page-10/profile-5.jpg");
+}
+
+.imgprofile[data-profile="6"] {
+  background-image: url("/img/page-10/profile-6.jpg");
+}
+
+.imgprofile[data-profile="7"] {
+  background-image: url("/img/page-10/profile-7.jpg");
+}
+
+.imgprofile[data-profile="8"] {
+  background-image: url("/img/page-10/profile-8.jpg");
+}
+
 .twitter i {
   color: #787E83;
   padding: 0 .5rem;
