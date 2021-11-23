@@ -598,6 +598,35 @@ section {
   cursor: pointer;
 }
 
+.option:hover {
+  background-color: #F56363;
+  color: #fff;
+}
+
+.option:hover span {
+  color: #fff;
+}
+
+.bnt-flex {
+  display: flex;
+}
+
+.reset {
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  padding: 0rem 2rem;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 70px;
+  font-family: 'Mitr', sans-serif;
+  font-size: 2vh;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 1rem;
+}
+
 .save {
   display: flex;
   align-items: center;
@@ -611,6 +640,18 @@ section {
   font-size: 2vh;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  margin: 1rem;
+}
+
+.reset:hover {
+  background-color: #F56363;
+  color: #fff;
+}
+
+
+.save:hover {
+  background-color: #F56363;
+  color: #fff;
 }
 
 .scoreArea a {
