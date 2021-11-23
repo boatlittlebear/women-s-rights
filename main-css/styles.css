@@ -954,6 +954,8 @@ section {
   .logo img {
     width: 15vh;
   }
+
+  
 }
 /************************* slick *****************************/
 
@@ -1115,6 +1117,10 @@ section {
     background-position: center;
     background-size: cover;
     position: absolute;
+  }
+
+  #header {
+    flex-direction: column;
   }
 }
 /************************* paper ***************************/
