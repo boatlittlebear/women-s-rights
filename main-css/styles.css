@@ -373,6 +373,11 @@ section {
   cursor: pointer;
 }
 
+.close:hover {
+  color: #787E83;
+
+}
+
 /** Cluster */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
