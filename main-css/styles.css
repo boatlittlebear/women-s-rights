@@ -211,7 +211,7 @@ section {
 
 .twitter > p:nth-child(1) {
   color: #787E83;
-  font-size: 1.5vh;
+  font-size: 2vh;
 }
 
 .twitter .profile {
@@ -309,13 +309,21 @@ section {
 
 
 /** Popup */
-button {
+.open {
   background-color: transparent;
   border: 0;
   color: #787E83;
   padding: 1rem;
   font-size: 1.6vh;
   cursor: pointer;
+}
+
+.open:hover {
+  color: #787e83a4;
+}
+
+.open:hover i {
+  color: #787e83a4;
 }
 
 .modal-container{
@@ -358,7 +366,11 @@ button {
   position: relative;
   margin-top: -4vh;
   margin-right: -1.7vw;
-  
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+  font-size: 1.6vh;
+  cursor: pointer;
 }
 
 /** Cluster */
