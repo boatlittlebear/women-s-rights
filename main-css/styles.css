@@ -61,7 +61,14 @@ header a {
 .menu p {
   margin: 0rem 1rem;
   font-size: 1.5vh;
+  color: #2c2b42;
 }
+
+.menu p:hover {
+  color: #ffd269;
+}
+
+
 
 .container {
   width: 100%;
