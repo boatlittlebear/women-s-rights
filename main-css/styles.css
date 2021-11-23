@@ -49,6 +49,10 @@ header a {
 	background: #FFFFFF;
 }
 
+.logo img {
+  width: 15vw;
+}
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -99,6 +103,7 @@ section {
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  
   font-size: 5vh;
   padding: 7vh 5vh 0;
 }
@@ -109,6 +114,7 @@ section {
 	overflow-y: auto;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .scrollY section {
@@ -375,7 +381,6 @@ section {
 
 .close:hover {
   color: #787E83;
-
 }
 
 /** Cluster */
@@ -736,6 +741,26 @@ section {
   border-radius: 50%;
 }
 
+.male {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background-image: url("/img/gender/male.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.female {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background-image: url("/img/gender/female.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .content {
   background: transparent;
   font-size: 1rem;
@@ -788,6 +813,7 @@ section {
 
 .carousel .box-flex img{
   width: 30vh;
+  margin: 5vh;
 }
 
 .slick-prev {
@@ -827,10 +853,10 @@ section {
 }
 
 .slick-prev {
-  left: 20vh;
+  left: 30vh;
 }
 .slick-next {
-  right: 20vh;
+  right: 30vh;
 }
 
 @media only screen and (max-width: 1180px) { 
@@ -889,6 +915,10 @@ section {
 
   .twitter-wrapper {
     width: 80vw;
+  }
+
+  .logo img {
+    width: 15vh;
   }
 }
 /************************* slick *****************************/
