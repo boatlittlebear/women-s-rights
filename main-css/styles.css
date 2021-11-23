@@ -1044,4 +1044,77 @@ section {
   width: 30%;
   height: 80%;
 }
+
+@media  screen and (max-width: 768px){
+  .paper-1{
+    transform: translate(30vw, -130vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-2{
+    transform: translate(35vw, -110vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-3{
+    transform: translate(0vw, -90vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-4{
+    transform: translate(-35vw, -70vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-5{
+    transform: translate(40vw, -40vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-6{
+    transform: translate(0vw, 0vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-7{
+    transform: translate(-40vw, -85vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-8{
+    transform: translate(-45vw, -40vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-9{
+    transform: translate(0vw, 0vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-10{
+    transform: translate(40vw, 40vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+}
 /************************* paper ***************************/
