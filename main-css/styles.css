@@ -34,7 +34,7 @@ header {
 }
 
 #header {
-  height: 7vh;
+  height: 9vh;
 }
 
 header a {
@@ -56,11 +56,17 @@ header a {
 .menu {
   display: flex;
   flex-direction: row;
+  margin: .5vh;
 }
 
 .menu p {
   margin: 0rem 1rem;
   font-size: 1.5vh;
+  color: #2c2b42;
+}
+
+.menu p:hover {
+  color: #ffd269;
 }
 
 .container {
@@ -83,7 +89,7 @@ footer {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 7vh;
+  height: 13vh;
   bottom: 0;
 	font-size: 1.5vh;
   padding: 1rem;
@@ -98,9 +104,8 @@ section {
   justify-content: center;
   align-content: center;
   flex-direction: column;
-  
   font-size: 5vh;
-  padding: 7vh 5vh 0;
+  padding: 9vh 5vh 0;
 }
 
 /** Full Page Scroll-Snapping HTML Sections */
@@ -108,7 +113,7 @@ section {
   height: 100vh;
 	overflow-y: auto;
   overflow-x: hidden;
-  /*scroll-snap-type: y mandatory;*/
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
@@ -306,9 +311,27 @@ section {
   color: #FFFFFF;
   background-color: #16202A;
 }
+
 .page-game{
   background-color: #F56363;
 }
+
+
+.end {
+  color: #FFFFFF;
+  background-color: #353349;
+  padding: 9vh 5vh 0;
+}
+
+.end img {
+  height: 20vh;
+  margin: 2vw;
+}
+
+.end img:hover {
+  opacity: .5;
+}
+
 /** Popup */
 .open {
   background-color: transparent;
@@ -365,8 +388,8 @@ section {
 .close {
   color: #000;
   position: relative;
-  margin-top: -4vh;
-  margin-right: -1.7vw;
+  margin-top: -5vh;
+  margin-right: -2.3vw;
   background-color: transparent;
   border: 0;
   padding: 1rem;
@@ -559,7 +582,7 @@ section {
 
 /************************* animation****************************/
 .page-20 {
-  padding: 7vh 5vh;
+  padding: 13vh 5vh;
 }
 
 .page-20 .question {
@@ -600,6 +623,35 @@ section {
   cursor: pointer;
 }
 
+.option:hover {
+  background-color: #F56363;
+  color: #fff;
+}
+
+.option:hover span {
+  color: #fff;
+}
+
+.bnt-flex {
+  display: flex;
+}
+
+.reset {
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  padding: 0rem 2rem;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 70px;
+  font-family: 'Mitr', sans-serif;
+  font-size: 2vh;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 1rem;
+}
+
 .save {
   display: flex;
   align-items: center;
@@ -613,6 +665,18 @@ section {
   font-size: 2vh;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  margin: 1rem;
+}
+
+.reset:hover {
+  background-color: #F56363;
+  color: #fff;
+}
+
+
+.save:hover {
+  background-color: #F56363;
+  color: #fff;
 }
 
 .scoreArea a {
@@ -915,6 +979,8 @@ section {
   .logo img {
     width: 15vh;
   }
+
+  
 }
 /************************* slick *****************************/
 
@@ -1004,5 +1070,98 @@ section {
   padding: 0 3rem;
   width: 30%;
   height: 80%;
+}
+
+@media  screen and (max-width: 768px){
+  .content1{
+    width: 15vw;
+    height: 45vw;
+  }
+  .content2{
+    width: 15vw;
+    height: 38vw;
+  }
+  .scales{
+    width: 17vw;
+    height: 50vw;
+  }
+  .paper-1{
+    transform: translate(30vw, -130vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-2{
+    transform: translate(35vw, -110vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-3{
+    transform: translate(0vw, -90vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-4{
+    transform: translate(-35vw, -70vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-5{
+    transform: translate(40vw, -40vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-6{
+    transform: translate(0vw, 0vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-7{
+    transform: translate(-40vw, -85vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-8{
+    transform: translate(-45vw, -40vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-9{
+    transform: translate(0vw, 0vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-10{
+    transform: translate(40vw, 40vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+
+  #header {
+    flex-direction: column;
+  }
+
+  .end img {
+    height: 20vw;
+  }
 }
 /************************* paper ***************************/
