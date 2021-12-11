@@ -306,7 +306,9 @@ section {
   color: #FFFFFF;
   background-color: #16202A;
 }
-
+.page-game{
+  background-color: #F56363;
+}
 /** Popup */
 .open {
   background-color: transparent;
