@@ -13,6 +13,9 @@
 
   <!-- Link CSS -->
   <link rel="stylesheet" href="main-css/styles.css">
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css'>
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css'>
+  <link rel="stylesheet" href="/main-css/game.css">
 
   <!-- Link Animate -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -545,6 +548,246 @@
         </div>
       </div>
     </section>
+    <section class="page-game">
+      <div class="slide-container">
+
+        <div class="wrapper">
+          <div class="clash-card barbarian">
+            <div id="question">คุณคิดว่าผู้หญิงในรูปทำอาชีพอะไร</div>
+            <div class="clash-card__image clash-card__image--0">
+              <img src="https://cdn.discordapp.com/attachments/881913497003372584/889571056350810112/Malala-01.png">
+              <div class="bgimg--1">
+                <img id = "img1_1_1"
+                  src="https://cdn.discordapp.com/attachments/882178823444131900/894678050925596682/Untitled_Artwork-1.png" style="opacity: 0;">
+                <img id = "img1_1_2"
+                  src="https://cdn.discordapp.com/attachments/882178823444131900/894678051072393296/Untitled_Artwork-2.png" style="opacity: 0;">
+                <img id = "img1_1_3"
+                  src="https://cdn.discordapp.com/attachments/882178823444131900/894678050967552021/Untitled_Artwork-3.png" style="opacity: 0;">
+              </div>
+              <div class="bgimg--2">
+                <img id = "img1_2_1"
+                  src="https://cdn.discordapp.com/attachments/882178823444131900/894677326414106724/Untitled_Artwork-2.png" style="opacity: 0;">
+                <img id = "img1_2_2"
+                  src="https://cdn.discordapp.com/attachments/882178823444131900/894677326573477998/Untitled_Artwork-1.png"style=" opacity: 0;">
+                <img id = "img1_2_3"
+                  src="https://cdn.discordapp.com/attachments/882178823444131900/894677384509395024/Untitled_Artwork.png" style="opacity: 0;">
+
+              </div>
+            </div>
+            <div id="answer-button">
+              <div class="wrapperbtn" id = "pop1">
+                <button class="btn" id="wrong1" onclick="wrongClick(this.id, 'popup-1')"> นักพูด </button>
+                <button class="btn" id="wrong2" onclick="wrongClick(this.id, 'popup-1')"> นักการเมือง</button>
+                <button class="btn" id="wrong3" onclick="wrongClick(this.id, 'popup-1')"> นักพูด</button>
+                <button class="btn" id="correct1" onclick="correctClick0(this.id, 'popup-1' , 'img1_1_1', 'img1_1_2', 'img1_1_3', 'img1_2_1', 'img1_2_2', 'img1_2_3','pop1')"> นักสิทธิมนุษยชน </button>
+              </div>
+
+            </div>
+
+
+          </div> <!-- end clash-card barbarian-->
+        </div> <!-- end wrapper -->
+
+        <div class="wrapper">
+          <div class="clash-card">
+            <div id="question">คุณคิดว่าผู้หญิงในรูปทำอาชีพอะไร</div>
+            <div class="clash-card__image clash-card__image--1">
+              <img src="https://cdn.discordapp.com/attachments/881913497003372584/889571099539566653/Malala-02.png" />
+              <div class="bgimg--3">
+                <img id = "img2_1_1"
+                  src="https://cdn.discordapp.com/attachments/882178823444131900/894674953528549386/Untitled_Artwork-1.png" style="opacity: 0;">
+                <img id = "img2_1_2"
+                  src="https://cdn.discordapp.com/attachments/882178823444131900/894674953184632924/Untitled_Artwork-2.png" style="opacity: 0;">
+                <img id = "img2_1_3"
+                  src="https://cdn.discordapp.com/attachments/882178823444131900/894674954791051284/Untitled_Artwork-3.png" style="opacity: 0;">
+              </div>
+              <div class="bgimg--4">
+                <img id = "img2_2_1"
+                  src="https://cdn.discordapp.com/attachments/882178823444131900/894673660999266375/Untitled_Artwork.png" style="opacity: 0;">
+                <img id = "img2_2_2"
+                  src="https://cdn.discordapp.com/attachments/882178823444131900/894673532276052088/Untitled_Artwork.png" style="opacity: 0;">
+                <img id = "img2_2_3"
+                  src="https://cdn.discordapp.com/attachments/882178823444131900/894673430182510592/Untitled_Artwork.png" style="opacity: 0;">
+                <img id = "img2_2_4"
+                  src="https://cdn.discordapp.com/attachments/882178823444131900/894672424182882374/Untitled_Artwork.png" style="opacity: 0;">
+              </div>
+            </div>
+
+
+            <div id="answer-button">
+              <div class="wrapperbtn">
+                <button class="btn" id="correct2" onclick="wrongClick(this.id, 'popup-1')"> นักสิทธิมนุษยชน </button>
+                <button class="btn" id="wrong4" onclick="wrongClick(this.id, 'popup-1')"> นักร้อง</button>
+                <button class="btn" id="wrong5" onclick="wrongClick(this.id, 'popup-1')"> นักแสดง</button>
+                <button class="btn" id="wrong6" onclick="correctClick1(this.id, 'popup-1', 'img2_1_1', 'img2_1_2', 'img2_1_3', 'img2_2_1', 'img2_2_2', 'img2_2_3', 'img2_2_4')"> พิธีกรรายการ </button>
+              </div>
+
+            </div>
+          </div> <!-- end clash-card archer-->
+        </div> <!-- end wrapper -->
+
+        <div class="wrapper">
+          <div class="clash-card">
+            <div id="question">คุณคิดว่าผู้หญิงในรูปทำอาชีพอะไร</div>
+            <div class="clash-card__image clash-card__image--2">
+              <img
+                src="https://cdn.discordapp.com/attachments/881913497003372584/889748848539467796/Untitled-11-01.png"  >
+                <div class="bgimg--5">
+                  <img id = "img3_1_1"
+                    src="https://cdn.discordapp.com/attachments/882178823444131900/894781338224300072/Untitled_Artwork-1.png" style="opacity: 0;" >
+                  <img id = "img3_1_2"
+                    src="https://cdn.discordapp.com/attachments/882178823444131900/894781338870247425/Untitled_Artwork-2.png" style="opacity: 0;">
+                  <img id = "img3_1_3"
+                    src="https://cdn.discordapp.com/attachments/882178823444131900/894781338480164904/Untitled_Artwork-3.png"style="opacity: 0;">
+                  <img id = "img3_1_4"
+                    src="https://cdn.discordapp.com/attachments/882178823444131900/894781338673098782/Untitled_Artwork-4.png" style="opacity: 0;">
+                </div>
+                <div class="bgimg--6">
+                  <img id = "img3_2_1"
+                    src="https://cdn.discordapp.com/attachments/882178823444131900/912404883964051466/Untitled_Artwork.png" style="opacity: 0;">
+                  <img id = "img3_2_2"
+                    src="https://cdn.discordapp.com/attachments/882178823444131900/912404968894496848/Untitled_Artwork.png" style="opacity: 0;">
+                  <img id = "img3_2_3"
+                    src="https://cdn.discordapp.com/attachments/882178823444131900/912405037119049758/Untitled_Artwork.png" style="opacity: 0;">
+                </div>
+            </div>
+
+            <div id="answer-button">
+              <div class="wrapperbtn">
+                <button class="btn" id="wrong7" onclick="wrongClick(this.id, 'popup-1')"> นักสิทธิมนุษยชน </button>
+                <button class="btn" id="wrong8" onclick="correctClick2(this.id, 'popup-1' , 'img3_1_1', 'img3_1_2', 'img3_1_3', 'img3_1_4', 'img3_2_1', 'img3_2_2', 'img3_2_3')"> นักการเมือง </button>
+                <button class="btn" id="correct3" onclick="wrongClick(this.id, 'popup-1')"> นักพูด</button>
+                <button class="btn" id="wrong9" onclick="wrongClick(this.id, 'popup-1')"> นักดนตรี</button>
+              </div>
+
+            </div>
+
+          </div> <!-- end clash-card giant-->
+        </div> <!-- end wrapper -->
+
+        <div class="wrapper">
+          <div class="clash-card">
+            <div id="question">คุณคิดว่าผู้หญิงในรูปทำอาชีพอะไร</div>
+            <div class="clash-card__image clash-card__image--3">
+              <img src="https://cdn.discordapp.com/attachments/881913497003372584/889762150204178462/Tammy-01.png" />
+              <div class="bgimg--7">
+                <img id = "img4_1_1"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/912407090155380746/FE5072CE-7B5C-4A0E-9F79-339E85C49AF6.png"  style="opacity: 0;" >
+                <img id = "img4_1_2"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/912407090352508989/54A6E243-7458-4BAC-AF04-B6BAF685BCC6.png"  style="opacity: 0;" >
+                <img id = "img4_1_3"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/912407090667077662/B02EEF48-9A49-4845-9B59-A457E22D5C5B.png"  style="opacity: 0;" >
+                <img id = "img4_1_4"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/912407090889383966/EDA64E78-A9B1-4379-B5BE-ECDA68C7E810.png"  style="opacity: 0;" >
+              </div>
+              <div class="bgimg--8">
+                <img id = "img4_2_1"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/912406540995149914/B2361B62-737D-4394-B10A-490B8DD7085F.png"  style="opacity: 0;" >
+                <img id = "img4_2_2"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/912406541267787816/E0985620-1CA0-405A-B536-F6A034E11CE7.png"  style="opacity: 0;" >
+              </div>
+              
+            </div>
+
+            <div id="answer-button">
+              <div class="wrapperbtn">
+                <button class="btn" id="wrong10" onclick="correctClick3(this.id, 'popup-1' , 'img4_1_1', 'img4_1_2', 'img4_1_3', 'img4_1_4', 'img4_2_1', 'img4_2_2')"> ทหารในกองทัพ</button>
+                <button class="btn" id="wrong11" onclick="wrongClick(this.id, 'popup-1')"> ผู้ว่าการรัฐ</button>
+                <button class="btn" id="correct4" onclick="wrongClick(this.id, 'popup-1')">นักสิทธิมนุษยชน </button>
+                <button class="btn" id="wrong12" onclick="wrongClick(this.id, 'popup-1')"> นักการเมือง</button>
+              </div>
+
+            </div>
+
+          </div> <!-- end clash-card giant-->
+        </div> <!-- end wrapper -->
+
+        <div class="wrapper">
+          <div class="clash-card">
+            <div id="question">คุณคิดว่าผู้หญิงในรูปทำอาชีพอะไร</div>
+            <div class="clash-card__image clash-card__image--4">
+              <img id 
+                src="https://cdn.discordapp.com/attachments/881913497003372584/891709492918620240/f97d432d1ba6807d.png" />
+                <div class="bgimg--9">
+                <img id = "img5_1_1"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/912419599448961054/1.png"  style="opacity: 0;">
+                <img id = "img5_1_2"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/912419599746748476/2.png"  style="opacity: 0;">
+                <img id = "img5_1_3"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/912419599994224670/3.png"  style="opacity: 0;">
+                </div>
+                <div class="bgimg--10">
+                <img id = "img5_2_1"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/894674639429726218/-01.png"  style="opacity: 0;">
+                <img id = "img5_2_2"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/894674640977399878/-02.png"  style="opacity: 0;">
+                <img id = "img5_2_3"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/894674645612105758/-03.png"  style="opacity: 0;">
+                </div>
+            </div>
+
+            <div id="answer-button">
+              <div class="wrapperbtn">
+                <button class="btn" id="wrong13" onclick="wrongClick(this.id, 'popup-1')"> นักการเมือง</button>
+                <button class="btn" id="wrong14" onclick="wrongClick(this.id, 'popup-1')"> นักสิทธิมนุษยชน</button>
+                <button class="btn" id="wrong15" onclick="correctClick4(this.id, 'popup-1', 'img5_1_1', 'img5_1_2', 'img5_1_3', 'img5_2_1', 'img5_2_2', 'img5_2_3')"> ผู้พิพากษา </button>
+                <button class="btn" id="correct5" onclick="wrongClick(this.id, 'popup-1')"> นักพูด</button>
+              </div>
+
+            </div>
+
+          </div> <!-- end clash-card giant-->
+        </div> <!-- end wrapper -->
+
+        <div class="wrapper">
+          <div class="clash-card">
+            <div id="question">คุณคิดว่าผู้หญิงในรูปทำอาชีพอะไร</div>
+            <div class="clash-card__image clash-card__image--5">
+              <img 
+                src="https://cdn.discordapp.com/attachments/881913497003372584/891709526632439858/3f67a1347be3bddf.png" />
+                <div class="bgimg--11">
+                  <img id = "img6_1_1"
+                    src="https://cdn.discordapp.com/attachments/882179053921120286/912407401456623686/662B3221-0C49-4524-A4C0-315C9072ED6A.png"  style="opacity: 0;">
+                  <img id = "img6_1_2"
+                    src="https://cdn.discordapp.com/attachments/882179053921120286/912407401838313573/43EF2E17-27B5-4555-A966-09A23512D013.png"  style="opacity: 0;">
+                  <img id = "img6_1_3"
+                    src="https://cdn.discordapp.com/attachments/882179053921120286/912407402807165008/01999303-AE0F-4EED-B05D-629BC826C7DD.png"  style="opacity: 0;">
+                </div>
+                <div class="bgimg--12">
+                <img id = "img6_2_1"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/912407712850128916/744FB2E2-6340-459C-82A3-0D25A61A2EEA.png"  style="opacity: 0;">
+                <img id = "img6_2_2"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/912407713118584842/CDA1799A-71DF-4BFD-AA88-43A3BEC8CC14.png"  style="opacity: 0;">
+                <img id = "img6_2_3"
+                  src="https://cdn.discordapp.com/attachments/882179053921120286/912407713714151534/C54E5DBF-8A4D-4180-9841-8AFEB69C378B.png"  style="opacity: 0;">
+                </div>
+            </div>
+
+            <div id="answer-button">
+              <div class="wrapperbtn">
+                <button class="btn" id="wrong16" onclick="correctClick5(this.id, 'popup-1', 'img6_1_1', 'img6_1_2', 'img6_1_3', 'img6_2_1', 'img6_2_2', 'img6_2_3')">สภาปนิก </button>
+                <button class="btn" id="wrong17" onclick="wrongClick(this.id, 'popup-1')">นักสิทธิมนุษยชน</button>
+                <button class="btn" id="correct6" onclick="wrongClick(this.id, 'popup-1')">ผู้ว่าการรัฐ </button>
+                <button class="btn" id="wrong18" onclick="wrongClick(this.id, 'popup-1')"> นักบินอวกาศ</button>
+              </div>
+
+            </div>
+
+          </div> <!-- end clash-card giant-->
+        </div> <!-- end wrapper -->
+
+      </div>
+      <!-- end container -->
+      <div class="my_popup">
+        <div class="popup" id="popup-1">
+          <div class="description-pop" id="textpopup">
+            <h4>""</h4>
+          </div>
+          <button onclick="closepop('popup-1')" class="popup-close">Close</button>
+        </div>
+
+    </section>
+
 
     <section class="page-14">
       คุณเองก็เป็นแบบนั้นได้นะ
@@ -681,10 +924,14 @@
   <script src="main-js/function.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
   <script src="piechart.js"></script>
   <script src="barchart.js"></script>
   <script src="button.js"></script>
   <script src="main-js/question.js"></script>
+  <script src="cardgame.js"></script>
+  <script src="game.js"></script>
 
 </body>
 
