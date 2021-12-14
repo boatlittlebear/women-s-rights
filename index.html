@@ -33,16 +33,16 @@
     <header>
       <div id="header">
         <div class="logo">
-          <a href="#!"><img src="img/logo/long-logo.png" style="width: 12vw; cursor: pointer;"></a>
+          <a href="#home"><img src="img/logo/long-logo.png" style="cursor: pointer;"></a>
         </div>
         <div class="menu">
-          <a href="#!"><p>Problem</p></a>
+          <a href="#page7"><p>Problem</p></a>
           <a href="#!"><p>Empower</p></a>
-          <a href="#!"><p>Improve</p></a>
+          <a href="#page16"><p>Improve</p></a>
         </div>
       </div>
     </header>
-    <section class="home">
+    <section id="home" class="home">
       <div class="fullscreen flex-center-parent">
         <div class="container flex-center-parent text-focus-in ">
           <h3 class="fade-in" id="INSPIRED">INSPIRED</h3>
@@ -87,22 +87,22 @@
       เธอเคยเหนื่อยกับที่ทำงานบ้างไหม
       <div class="container flex-center-parent">
         <div id="paper1" class="paper paper-1">
-          <img src="/img/paper gif/paper-01.png"    style="width: 10vw">
+          <img src="/img/paper gif/paper-01.png"    style="width: 200px">
         </div>
         <div id="paper2" class="paper paper-2">
-          <img src="/img/paper gif/paper-02.png"    style="width: 10vw">
+          <img src="/img/paper gif/paper-02.png"    style="width: 200px">
         </div>
         <div id="paper3" class="paper paper-3">
-          <img src="/img/paper gif/paper-03.png"    style="width: 10vw">
+          <img src="/img/paper gif/paper-03.png"    style="width: 200px">
         </div>
         <div id="paper4" class="paper paper-4">
-          <img src="/img/paper gif/paper-04.png"    style="width: 10vw">
+          <img src="/img/paper gif/paper-04.png"    style="width: 200px">
         </div>
         <div id="paper5" class="paper paper-5">
-          <img src="/img/paper gif/paper-05.png"    style="width: 10vw">
+          <img src="/img/paper gif/paper-05.png"    style="width: 200px">
         </div>
         <div id="paper6" class="paper paper-6">
-          <img src="/img/paper gif/paper-06.png"    style="width: 10vw">
+          <img src="/img/paper gif/paper-06.png"    style="width: 200px">
         </div>
       </div>
     </section>
@@ -110,16 +110,16 @@
       เธอเคยเป็นผู้นำในที่ทำงานบ้างหรือเปล่า
       <div class="container flex-center-parent">
         <div id="paper7" class="paper paper-7">
-          <img src="/img/paper gif/paper-07.png"    style="width: 10vw">
+          <img src="/img/paper gif/paper-07.png"    style="width: 200px">
         </div>
         <div id="paper8" class="paper paper-8">
-          <img src="/img/paper gif/paper-08.png"    style="width: 10vw">
+          <img src="/img/paper gif/paper-08.png"    style="width: 200px">
         </div>
         <div id="paper9" class="paper paper-9">
-          <img src="/img/paper gif/paper-09.png"    style="width: 10vw">
+          <img src="/img/paper gif/paper-09.png"    style="width: 200px">
         </div>
         <div id="paper10" class="paper paper-10">
-          <img src="/img/paper gif/paper-10.png"    style="width: 10vw">
+          <img src="/img/paper gif/paper-10.png"    style="width: 200px">
         </div>
       </div>
     </section>
@@ -132,8 +132,18 @@
     <section class="page-6">
       ลองมาดูข้อมูลเหล่านี้สิ
     </section>
-    <section class="page-7">
-      <p>อัตราการมีส่วนร่วมในกำลังแรงงาน<br>ตั่งแต่ พ.ศ. 2559-2563</p>
+    <section id="page7" class="page-7">
+      <p>อัตราการมีส่วนร่วมในกำลังแรงงาน<br>ตั้งแต่ พ.ศ. 2559-2563</p>
+      <div class="flexbox-1">
+        <div class="flex-item">
+          <div class="male"></div>
+          <p>เพศชาย</p>
+        </div>
+        <div class="flex-item">
+          <div class="female"></div>
+          <p>เพศหญิง</p>
+        </div>
+      </div>
       <div class="wrapper">
         <div class="chart-wrapper">
           <canvas id="chartBar" style="height: 50vh; width: 100vw; padding: 0 5vh"></canvas>
@@ -148,7 +158,7 @@
       
     </section>
     <section class="page-8">
-      <p>เปอร์เซนต์อาชีพการทำงานของสตรีไทยตั้งแต่ พ.ศ. 2559-2563</p>
+      <p>เปอร์เซ็นต์อาชีพการทำงานของสตรีไทยตั้งแต่ พ.ศ. 2559-2563</p>
 
       <div class="flexbox-1">
         <div class="flex-item">
@@ -165,7 +175,7 @@
           <div class="content">
             <img src="/img/page-8/wrench.png" class="content1">
             <img src="/img/page-8/screw.png" class="content2">
-            <p style="text-align: center; font-size: 1.5vh;">ช่างฝีมือและผู้ปฏิบัติงานที่เกี่ยวข้อง</p>
+            <p style="text-align: center; font-size: 1.5vh; opacity: .7;">ช่างฝีมือและผู้ปฏิบัติงานที่เกี่ยวข้อง</p>
           </div>
         </div>
 
@@ -173,14 +183,14 @@
           <div class="content">
             <img src="/img/page-8/shovel2.png" class="content1">
             <img src="/img/page-8/shovel.png" class="content2">
-            <p style="text-align: center; font-size: 1.5vh;">ผู้ปฏิบัติงานที่มีฝีมือในด้านเกษตรและการประมง</p>
+            <p style="text-align: center; font-size: 1.5vh; opacity: .7;">ผู้ปฏิบัติงานที่มีฝีมือในด้านเกษตรและการประมง</p>
           </div>
         </div>
 
         <div class="item-body">
           <div class="content">
             <img src="/img/page-8/scales.png" class="scales">
-            <p style="text-align: center; font-size: 1.5vh;">ผู้บัญญัติกฎหมาย ข้าราชการอาวุโส</p>
+            <p style="text-align: center; font-size: 1.5vh; opacity: .7;">ผู้บัญญัติกฎหมาย ข้าราชการอาวุโส</p>
           </div>
         </div>
 
@@ -195,7 +205,7 @@
 
     </section>
     <section class="page-9">
-      <p>เปอร์เซ็นค์ปัญหาการทำงานของสตรีที่ทำงาน ตั่งแต่ พ.ศ. 2559-2563</p>
+      <p>เปอร์เซ็นต์ปัญหาการทำงานของสตรีที่ทำงาน ตั้งแต่ พ.ศ. 2559-2563</p>
       <div class="flex-page-9">
         <div class="wrapper">
           <div class="chart-wrapper">
@@ -380,9 +390,9 @@
                   X
                 </button>
                 <p>
-                  Catcalling  การแซวในที่สาธารณะ หนึ่งในการคุกคามทางเพศด้วยวาจาหรือคำพูดที่มักพบเจอในชีวิตประจำวัน หรือการคุกคามทางเพศตามท้องถนน  <br>
-                  (Street harassment) หากมองผิวเผินอาจมองว่าจริงจังไปหรือเปล่า ใครๆ ก็ทำกัน แต่คำพูดเหล่านี้สามารถส่งผลกระทบต่อสภาพจิตใจของผู้ตกเป็น<br>
-                  เหยื่อจนต้องระแวงและอึดอัดใจ จึงเกิดการตั้งคำถามถึงความปลอดภัย และปัญหาที่เพศหญิงต้องพบเจอ<br>
+                  Catcalling  การแซวในที่สาธารณะ หนึ่งในการคุกคามทางเพศด้วยวาจาหรือคำพูดที่มักพบเจอในชีวิตประจำวัน หรือการคุกคามทางเพศตามท้องถนน
+                  (Street harassment) หากมองผิวเผินอาจมองว่าจริงจังไปหรือเปล่า ใครๆ ก็ทำกัน แต่คำพูดเหล่านี้สามารถส่งผลกระทบต่อสภาพจิตใจของผู้ตกเป็น
+                  เหยื่อจนต้องระแวงและอึดอัดใจ จึงเกิดการตั้งคำถามถึงความปลอดภัย และปัญหาที่เพศหญิงต้องพบเจอ
                 </p>
             </div>
           </div>
@@ -418,10 +428,10 @@
                 <button id="close3" class="close">
                   X
                 </button>
-                <p>
-                  Sexual harassment การคุกคามทางเพศ การกระทำที่มีเจตนาไม่ดี เพื่อหวังผลประโยชน์สำเร็จความใคร่ การร่วมรัก โดยไม่ได้รับความยินยอมจากอีก <br>
-                  ฝ่าย ไม่ว่าจะทางวาจา ร่างกาย หรือท่าทาง สายตา การคุกคามทางเพศเป็นผลพวงจากระบบชายเป็นใหญ่ ทำให้เกิดการตั้งคำถาม หรือกล่าวโทษเหยื่อ เห็นผิด<br>
-                  เป็นชอบ จนปัญหาเหล่านี้ถูกเพิกเฉย และมองว่าเป็นเรื่องปกติในสังคม นำไปสู่ปัญหาล่วงละเมิดทางเพศหรือรุนแรงกว่าเดิม<br>
+                <p class="status">
+                  Sexual harassment การคุกคามทางเพศ การกระทำที่มีเจตนาไม่ดี เพื่อหวังผลประโยชน์สำเร็จความใคร่ การร่วมรัก โดยไม่ได้รับความยินยอมจากอีก
+                  ฝ่าย ไม่ว่าจะทางวาจา ร่างกาย หรือท่าทาง สายตา การคุกคามทางเพศเป็นผลพวงจากระบบชายเป็นใหญ่ ทำให้เกิดการตั้งคำถาม หรือกล่าวโทษเหยื่อ เห็นผิด
+                  เป็นชอบ จนปัญหาเหล่านี้ถูกเพิกเฉย และมองว่าเป็นเรื่องปกติในสังคม นำไปสู่ปัญหาล่วงละเมิดทางเพศหรือรุนแรงกว่าเดิม
                 </p>
             </div>
           </div>
@@ -453,10 +463,10 @@
                 <button id="close4" class="close">
                   X
                 </button>
-                <p>
-                  สวัสดิการผ้าอนามัย การมีประจำเดือนเป็นเรื่องที่หลีกเลี่ยงไม่ได้ ผ้าอนามัยจึงเป็นผลิตภัณฑ์สำคัญในการใช้ชีวิตประจำวันที่มีความเกี่ยวโยงกับค่าครองชีพ <br>
-                  รายได้ของเพศหญิง ผ้าอนามัยจัดเป็นอีกหนึ่งสิทธิอนามัยขั้นพื้นฐานที่ประชาชนต้องได้รับ รัฐบาลจึงควรเข้ามาแบ่งเบาภาระของผู้หญิง รับรู้ถึงปัญหาของสิทธิ<br>
-                  อนามัยและสร้างสวัสดิการที่สามารถเอื้ออำนวยสุขลักษณะของเพศหญิง<br>
+                <p class="status">
+                  สวัสดิการผ้าอนามัย การมีประจำเดือนเป็นเรื่องที่หลีกเลี่ยงไม่ได้ ผ้าอนามัยจึงเป็นผลิตภัณฑ์สำคัญในการใช้ชีวิตประจำวันที่มีความเกี่ยวโยงกับค่าครองชีพ
+                  รายได้ของเพศหญิง ผ้าอนามัยจัดเป็นอีกหนึ่งสิทธิอนามัยขั้นพื้นฐานที่ประชาชนต้องได้รับ รัฐบาลจึงควรเข้ามาแบ่งเบาภาระของผู้หญิง รับรู้ถึงปัญหาของสิทธิ
+                  อนามัยและสร้างสวัสดิการที่สามารถเอื้ออำนวยสุขลักษณะของเพศหญิง
                 </p>
             </div>
           </div>
@@ -489,9 +499,9 @@
                 <button id="close5" class="close">
                   X
                 </button>
-                <p>
-                  Women’s rights คือ สิทธิและการให้สิทธิแก่ผู้หญิงและเด็กหญิงในสังคมต่างๆ ในบางแห่งกฎหมาย ขนบธรรมเนียมประเพณีท้องถิ่น และพฤติกรรมมีส่วน<br>
-                  ให้การสนับสนุนและสร้างสิทธิสตรี การต่อต้านการใช้สิทธิสตรีและเด็กหญิงและให้การยอมรับผู้ชายและเด็กผู้ชายมากกว่า<br>
+                <p class="status">
+                  Women’s rights คือ สิทธิและการให้สิทธิแก่ผู้หญิงและเด็กหญิงในสังคมต่างๆ ในบางแห่งกฎหมาย ขนบธรรมเนียมประเพณีท้องถิ่น และพฤติกรรมมีส่วน
+                  ให้การสนับสนุนและสร้างสิทธิสตรี การต่อต้านการใช้สิทธิสตรีและเด็กหญิงและให้การยอมรับผู้ชายและเด็กผู้ชายมากกว่า
                 </p>
             </div>
           </div>
@@ -523,10 +533,10 @@
                 <button id="close6" class="close">
                   X
                 </button>
-                <p>
-                  สิทธิการลาคลอด เป็นการลาหยุดราชการของสตรีตั้งครรภ์ในช่วงก่อนคลอด วันคลอดและหลังคลอด โดยระบุไว้ว่า เพศหญิงมีสิทธิลาคลอดบุตรได้ <br>
-                  90 วัน ในขณะที่เพศชายมีสิทธิลาไม่เกิน 15 วัน อีกทั้งสัญญาในบริษัทที่เพิกเฉยสิทธิการลาคลอด บางก็มองว่าหญิงตั้งครรภ์จะทำงานไม่ดีเท่าเดิม<br>
-                  จนเป็นสาเหตุการเลิกจ้าง หน้าที่ของผู้หญิงจึงถูกจำกัดเพียงการเลี้ยงลูก การอยู่ดูแลบ้าน ครอบครัวจึงมีรายได้จากเงินเดือนของผู้ชายเพีงฝ่ายเดียว<br>
+                <p class="status">
+                  สิทธิการลาคลอด เป็นการลาหยุดราชการของสตรีตั้งครรภ์ในช่วงก่อนคลอด วันคลอดและหลังคลอด โดยระบุไว้ว่า เพศหญิงมีสิทธิลาคลอดบุตรได้ 
+                  90 วัน ในขณะที่เพศชายมีสิทธิลาไม่เกิน 15 วัน อีกทั้งสัญญาในบริษัทที่เพิกเฉยสิทธิการลาคลอด บางก็มองว่าหญิงตั้งครรภ์จะทำงานไม่ดีเท่าเดิม
+                  จนเป็นสาเหตุการเลิกจ้าง หน้าที่ของผู้หญิงจึงถูกจำกัดเพียงการเลี้ยงลูก การอยู่ดูแลบ้าน ครอบครัวจึงมีรายได้จากเงินเดือนของผู้ชายเพีงฝ่ายเดียว
                   และมีรายจ่ายมากกว่ารายได้ สังคมจึงควรส่งเสริมสิทธิตั้งครรภ์ เพื่อคุณภาพชีวิตที่ดี การเพิ่มเงินเดือนทั้งผู้เป็นพ่อและแม่ ในช่วงหยุดลาคลอด
                 </p>
             </div>
@@ -543,7 +553,7 @@
       ลองทำตามวิธีเหล่านี้ดูสิ ! 
     </section>
 
-    <section class="page-16">
+    <section id="page16" class="page-16">
       <div class="carousel clearfix">
         <div class="carousel-view clearfix">
 
@@ -637,7 +647,10 @@
       </div>
         <div class="scoreArea">
           <div class="scorePct" data-image=""></div>
-          <a id="share" href="" download><div class="save">SAVE</div></a>
+          <div class="bnt-flex">
+            <div id="reset" class="reset">เล่นอีกครั้ง</div>
+            <a id="share" href="" download><div class="save">SAVE</div></a>
+          </div>
         </div>
       <footer>
         <div id="footer">

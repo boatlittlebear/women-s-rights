@@ -49,6 +49,10 @@ header a {
 	background: #FFFFFF;
 }
 
+.logo img {
+  width: 15vw;
+}
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -57,7 +61,14 @@ header a {
 .menu p {
   margin: 0rem 1rem;
   font-size: 1.5vh;
+  color: #2c2b42;
 }
+
+.menu p:hover {
+  color: #ffd269;
+}
+
+
 
 .container {
   width: 100%;
@@ -71,11 +82,6 @@ header a {
   left:0;
   background:#fffc;
   z-index: 3;
-}
-
-.paper {
-  opacity: 0;
-  transition: 5s;
 }
 
 footer {
@@ -99,6 +105,7 @@ section {
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  
   font-size: 5vh;
   padding: 7vh 5vh 0;
 }
@@ -109,6 +116,7 @@ section {
 	overflow-y: auto;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .scrollY section {
@@ -306,6 +314,9 @@ section {
   background-color: #16202A;
 }
 
+.page-16{
+  background-color: #F58894;
+}
 
 
 /** Popup */
@@ -364,8 +375,8 @@ section {
 .close {
   color: #000;
   position: relative;
-  margin-top: -4vh;
-  margin-right: -1.7vw;
+  margin-top: -5vh;
+  margin-right: -2.3vw;
   background-color: transparent;
   border: 0;
   padding: 1rem;
@@ -375,7 +386,6 @@ section {
 
 .close:hover {
   color: #787E83;
-
 }
 
 /** Cluster */
@@ -600,6 +610,35 @@ section {
   cursor: pointer;
 }
 
+.option:hover {
+  background-color: #F56363;
+  color: #fff;
+}
+
+.option:hover span {
+  color: #fff;
+}
+
+.bnt-flex {
+  display: flex;
+}
+
+.reset {
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  padding: 0rem 2rem;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 70px;
+  font-family: 'Mitr', sans-serif;
+  font-size: 2vh;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 1rem;
+}
+
 .save {
   display: flex;
   align-items: center;
@@ -613,6 +652,18 @@ section {
   font-size: 2vh;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  margin: 1rem;
+}
+
+.reset:hover {
+  background-color: #F56363;
+  color: #fff;
+}
+
+
+.save:hover {
+  background-color: #F56363;
+  color: #fff;
 }
 
 .scoreArea a {
@@ -736,6 +787,26 @@ section {
   border-radius: 50%;
 }
 
+.male {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background-image: url("/img/gender/male.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.female {
+  width: 5vh;
+  height: 5vh;
+  border-radius: 50%;
+  background-image: url("/img/gender/female.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .content {
   background: transparent;
   font-size: 1rem;
@@ -784,14 +855,16 @@ section {
 .carousel .box-flex p {
   font-size: 2vh;
   text-align: left;
+  color: #040B34;	
 }
 
 .carousel .box-flex img{
   width: 30vh;
+  margin: 5vh;
 }
 
 .slick-prev {
-  background: url(../img/tool/left-arrow.png);
+  background: url(../img/tool/left-arrow-01.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -809,7 +882,7 @@ section {
 }
 
 .slick-next {
-  background: url(../img/tool/right-arrow.png);
+  background: url(../img/tool/right-arrow-01.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -827,10 +900,10 @@ section {
 }
 
 .slick-prev {
-  left: 20vh;
+  left: 30vh;
 }
 .slick-next {
-  right: 20vh;
+  right: 30vh;
 }
 
 @media only screen and (max-width: 1180px) { 
@@ -890,10 +963,21 @@ section {
   .twitter-wrapper {
     width: 80vw;
   }
+
+  .logo img {
+    width: 15vh;
+  }
+
+  
 }
 /************************* slick *****************************/
 
 /************************* paper ***************************/
+.paper {
+  opacity: 0;
+  transition: 3s;
+}
+
 .paper-1{
   transform: translate(12vw, -60vh);
   background-repeat: no-repeat;
@@ -974,5 +1058,82 @@ section {
   padding: 0 3rem;
   width: 30%;
   height: 80%;
+}
+
+@media  screen and (max-width: 768px){
+  .paper-1{
+    transform: translate(30vw, -130vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-2{
+    transform: translate(35vw, -110vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-3{
+    transform: translate(0vw, -90vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-4{
+    transform: translate(-35vw, -70vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-5{
+    transform: translate(40vw, -40vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-6{
+    transform: translate(0vw, 0vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-7{
+    transform: translate(-40vw, -85vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-8{
+    transform: translate(-45vw, -40vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-9{
+    transform: translate(0vw, 0vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .paper-10{
+    transform: translate(40vw, 40vh);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+
+  #header {
+    flex-direction: column;
+  }
 }
 /************************* paper ***************************/
