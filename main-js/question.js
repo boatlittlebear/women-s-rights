@@ -39,6 +39,13 @@ let correctAnswers = 0;
 
 showQuestion();
 
+//reset event
+document.querySelector(".scoreArea .reset").addEventListener("click", () => {
+  currentQuestion = 0;
+  correctAnswers = 0;
+  showQuestion();
+});
+
 //Functions
 function showQuestion() {
   if (questions[currentQuestion]) {
