@@ -18,4 +18,4 @@ let chartDoughnut = new Chart(doughnut, {
 })
 
 chartDoughnut.canvas.parentNode.style.height = '100%'; 
-chartDoughnut.canvas.parentNode.style.width = '30vh';
+chartDoughnut.canvas.parentNode.style.width = '30vw';

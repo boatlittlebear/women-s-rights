@@ -1,6 +1,6 @@
 :root{
   --hue-neutral:200;
-  --hue-wrong:0;
+  --hue-wrong: 200;
   --hue-correct: 145;
 }
 .slide-container {
@@ -10,12 +10,12 @@
   }
   
   .wrapper {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
   }
  
   .clash-card {
-    background-color: #F56363;
+    background-color: #f5a363;
     
     width: 300px;
     display: inline-block;
@@ -27,8 +27,7 @@
   }
   @media (min-width: 1000px) {
     .clash-card {
-        background-color: #F56363;
-
+      background-color: #f5a363;
       width: 550px;
       display: inline-block;
       margin: auto;
@@ -46,6 +45,7 @@
     margin-bottom: 35px;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
+    z-index: -1;
   }
   
  
@@ -421,13 +421,13 @@
     height: 0;
   }
   
-  .slick-prev {
-    left: 100px;
+  .page-game .slick-prev {
+    left: 15vh;
     z-index: 999;
   }
   
-  .slick-next {
-    right: 100px;
+  .page-game .slick-next {
+    right: 15vh;
     z-index: 999;
   }
   .wrapperbtn {
@@ -439,13 +439,16 @@
 
   .btn {
     --hue: var(--hue-neutral);
-    background-color: hsl(var(--hue), 100%, 50%);
+    background-color: white;
     border-radius: 20px;
-    color: white;
+    color: black;
     padding: 30px;    
     width: 235px;
     font-size: 16px;
     margin: 8px 20px;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 10%);
+    font-family: 'Noto Serif Thai', serif;
+    border: 1px solid #000;
   }
 
   .btn.correct{
@@ -455,7 +458,7 @@
   }
 
   .btn.wrong{
-    --hue: var(--hue-wrong);
+    --hue: #f56363;
     color: black;
 
   }
@@ -464,7 +467,7 @@
     .btn {
       --hue: var(--hue-neutral);
       border-radius: 20px;
-      color: white;
+      color: black;
       padding: 20px;    
       width: 110px;
       font-size: 16px;

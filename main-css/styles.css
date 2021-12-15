@@ -89,7 +89,7 @@ footer {
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 13vh;
+  height: 11vh;
   bottom: 0;
 	font-size: 1.5vh;
   padding: 1rem;
@@ -313,9 +313,12 @@ section {
 }
 
 .page-game{
-  background-color: #F56363;
+  background-color: #f5a363;
 }
 
+#question {
+  color: white;
+}
 
 .end {
   color: #FFFFFF;
@@ -582,7 +585,7 @@ section {
 
 /************************* animation****************************/
 .page-20 {
-  padding: 13vh 5vh;
+  padding: 11vh 5vh;
 }
 
 .page-20 .question {
@@ -1074,16 +1077,13 @@ section {
 
 @media  screen and (max-width: 768px){
   .content1{
-    width: 15vw;
-    height: 45vw;
+    height: 30vw;
   }
   .content2{
-    width: 15vw;
-    height: 38vw;
+    height: 30vw;
   }
   .scales{
-    width: 17vw;
-    height: 50vw;
+    height: 30vw;
   }
   .paper-1{
     transform: translate(30vw, -130vh);
