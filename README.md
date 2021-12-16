@@ -36,16 +36,18 @@
 |ดร.สุภวรรณ ทัศนประเสริฐ|อ.วรพล ยวงเงิน|
 
 ### เว็บไซต์
-- [รูปแบบงานออกแบบ](https://www.figma.com/file/n6gik7NgskzGfkl0neGpxa/Web-week-3-workshop?node-id=0%3A1)
+- [รูปแบบงานออกแบบมือถือ](https://www.figma.com/file/cpCM3glRcgI9RyuzMWNqe0/empowered-women?node-id=537%3A108)
+- [รูปแบบงานออกแบบเว็บไซต์](https://www.figma.com/file/cpCM3glRcgI9RyuzMWNqe0/empowered-women?node-id=0%3A1)
+- [เว็บไซต์เต็ม](https://empowered-women.netlify.app/)
 
 ### ผู้พัฒนาเว็บไซต์
 |รหัสนักศึกษา| ชื่อ - นามสกุล | Github | หน้าที่ | หมายเหตุ |
 |--|--|--|--|--|
-| 62070026 | จักรกฤษณ์ สายแฉ่ง | [boatlittlebear](https://github.com/boatlittlebear) | "-" | - |
-| 62070115 | ปรากรณ์ คำเภา | [prakorn2033](https://github.com/Prakorn2033) | "-" | - |
-| 62070129 | พงศธร เหลืองประเสริฐ |[barost2709](https://github.com/barost2709) | "-" | - |
-| 62070227 | เสฏฐนันท์ จงเจตน์ดี | [sedthanun](https://github.com/sedthanun) | "-" | - |
-| 62070227 | อิทธิ์ศรา ยันต์เจริญ | [Jaegerjaquez](https://github.com/imlanzelotx) | "-" | - |
+| 62070026 | จักรกฤษณ์ สายแฉ่ง | [boatlittlebear](https://github.com/boatlittlebear) | "จัดทำคำถาม" | - |
+| 62070115 | ปรากรณ์ คำเภา | [prakorn2033](https://github.com/Prakorn2033) | "จัดทำเนื้อหาในเว็บ" | - |
+| 62070129 | พงศธร เหลืองประเสริฐ |[barost2709](https://github.com/barost2709) | "จัดทำอนิเมชั่นในเว็บ" | - |
+| 62070227 | เสฏฐนันท์ จงเจตน์ดี | [sedthanun](https://github.com/sedthanun) | "จัดทำอนิเมชั่นในเว็บ" | - |
+| 62070227 | อิทธิ์ศรา ยันต์เจริญ | [Jaegerjaquez](https://github.com/imlanzelotx) | "จัดทำโครงเว็บ" | - |
 
 
 
